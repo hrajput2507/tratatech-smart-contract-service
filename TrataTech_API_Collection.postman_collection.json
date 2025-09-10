@@ -1,0 +1,321 @@
+{
+  "info": {
+    "name": "TrataTech API Collection",
+    "description": "Complete API collection for TrataTech blockchain platform",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "x-api-key",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "tratatech_client_2024_secure_key_12345",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000/api"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "item": [
+        {
+          "name": "Basic Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["health"]
+            }
+          }
+        },
+        {
+          "name": "Detailed Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health/detailed",
+              "host": ["{{baseUrl}}"],
+              "path": ["health", "detailed"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Main Contract",
+      "item": [
+        {
+          "name": "Create Event",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"eventName\": \"Test Event\",\n  \"eventDescription\": \"Test event description\",\n  \"eventDate\": 2000000000,\n  \"maxAttendees\": 100,\n  \"ipfsData\": {\n    \"name\": \"Test Event {{$timestamp}}\",\n    \"description\": \"Test event description - {{$timestamp}}\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/main/events",
+              "host": ["{{baseUrl}}"],
+              "path": ["main", "events"]
+            }
+          }
+        },
+        {
+          "name": "Create Product Launch",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productName\": \"Test Product\",\n  \"productDescription\": \"Test product description\",\n  \"launchDate\": 2000000000,\n  \"earlyAccessEndDate\": 2000000000,\n  \"maxEarlyAccess\": 50,\n  \"ipfsData\": {\n    \"name\": \"Test Product\",\n    \"description\": \"Test product description\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/main/product-launches",
+              "host": ["{{baseUrl}}"],
+              "path": ["main", "product-launches"]
+            }
+          }
+        },
+        {
+          "name": "Get Platform Fee",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/main/platform-fee",
+              "host": ["{{baseUrl}}"],
+              "path": ["main", "platform-fee"]
+            }
+          }
+        },
+        {
+          "name": "Get Blockchain Activity",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/main/blockchain-activity",
+              "host": ["{{baseUrl}}"],
+              "path": ["main", "blockchain-activity"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Product Passport",
+      "item": [
+        {
+          "name": "Register Brand",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"brandId\": \"TEST_BRAND_{{$timestamp}}\",\n  \"brandName\": \"Test Brand\",\n  \"brandDescription\": \"Test brand description\",\n  \"authorizedCountries\": [\"US\", \"CA\"],\n  \"ipfsData\": {\n    \"name\": \"Test Brand {{$timestamp}}\",\n    \"description\": \"Test brand description - {{$timestamp}}\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/passport/brands",
+              "host": ["{{baseUrl}}"],
+              "path": ["passport", "brands"]
+            }
+          }
+        },
+        {
+          "name": "Create Product Passport",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"serialNumber\": \"SN001\",\n  \"brandId\": \"TEST_BRAND_001\",\n  \"productName\": \"Test Product\",\n  \"productDescription\": \"Test product description\",\n  \"materials\": \"Cotton, Polyester\",\n  \"manufacturingLocation\": \"USA\",\n  \"manufacturingDate\": 2000000000,\n  \"ipfsData\": {\n    \"name\": \"Test Product\",\n    \"description\": \"Test product description\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/passport/passports",
+              "host": ["{{baseUrl}}"],
+              "path": ["passport", "passports"]
+            }
+          }
+        },
+        {
+          "name": "Get Brand Details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/passport/brands/TEST_BRAND_001",
+              "host": ["{{baseUrl}}"],
+              "path": ["passport", "brands", "TEST_BRAND_001"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ownership Registry",
+      "item": [
+        {
+          "name": "Create Ownership Deed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"passportId\": 1,\n  \"owner\": \"0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927\",\n  \"acquisitionPrice\": 100.5,\n  \"acquisitionMethod\": \"Purchase\",\n  \"ipfsData\": {\n    \"name\": \"Ownership Deed\",\n    \"description\": \"Ownership transfer deed\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ownership/deeds",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "deeds"]
+            }
+          }
+        },
+        {
+          "name": "Transfer Ownership Deed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"to\": \"0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927\",\n  \"transferPrice\": 150.0,\n  \"transferType\": 0,\n  \"ipfsData\": {\n    \"name\": \"Transfer Record\",\n    \"description\": \"Ownership transfer record\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ownership/deeds/1/transfer",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "deeds", "1", "transfer"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Provenance",
+      "item": [
+        {
+          "name": "Create Provenance Entry",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"passportId\": 1,\n  \"entryType\": 0,\n  \"from\": \"0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927\",\n  \"to\": \"0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927\",\n  \"location\": \"New York, USA\",\n  \"description\": \"Product manufactured\",\n  \"ipfsData\": {\n    \"name\": \"Provenance Entry\",\n    \"description\": \"Manufacturing provenance entry\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/provenance/entries",
+              "host": ["{{baseUrl}}"],
+              "path": ["provenance", "entries"]
+            }
+          }
+        },
+        {
+          "name": "Create Service Record",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"passportId\": 1,\n  \"serviceType\": \"Maintenance\",\n  \"serviceProvider\": \"Service Co.\",\n  \"serviceDescription\": \"Regular maintenance service\",\n  \"serviceDate\": 2000000000,\n  \"nextServiceDate\": 2000000000,\n  \"certificateNumber\": \"CERT001\",\n  \"ipfsData\": {\n    \"name\": \"Service Record\",\n    \"description\": \"Maintenance service record\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/provenance/service-records",
+              "host": ["{{baseUrl}}"],
+              "path": ["provenance", "service-records"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Forwarder",
+      "item": [
+        {
+          "name": "Execute Meta Transaction",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userAddress\": \"0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927\",\n  \"functionSignature\": \"0x12345678\",\n  \"sigR\": \"0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef\",\n  \"sigS\": \"0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef\",\n  \"sigV\": 27,\n  \"value\": \"0\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/forwarder/execute",
+              "host": ["{{baseUrl}}"],
+              "path": ["forwarder", "execute"]
+            }
+          }
+        },
+        {
+          "name": "Get Nonce",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/forwarder/nonce/0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927",
+              "host": ["{{baseUrl}}"],
+              "path": ["forwarder", "nonce", "0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
