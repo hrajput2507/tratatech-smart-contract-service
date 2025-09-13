@@ -1,0 +1,823 @@
+{
+  "info": {
+    "name": "TrataTech API Collection - Brand Activation Fixed",
+    "description": "Complete API collection for TrataTech Smart Contract System with fixed brand activation flow and IPFS object support",
+    "version": "2.1.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3005",
+      "type": "string"
+    },
+    {
+      "key": "adminApiKey",
+      "value": "admin-api-key-123",
+      "type": "string"
+    },
+    {
+      "key": "userApiKey",
+      "value": "user-api-key-123",
+      "type": "string"
+    },
+    {
+      "key": "operatorApiKey",
+      "value": "operator-api-key-123",
+      "type": "string"
+    },
+    {
+      "key": "testAddress",
+      "value": "0x1234567890123456789012345678901234567890",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "🔧 System Endpoints",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/health"
+          }
+        },
+        {
+          "name": "API Documentation",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api-docs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "🔐 Authentication",
+      "item": [
+        {
+          "name": "Login with Wallet",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"walletAddress\": \"{{testAddress}}\",\n  \"signature\": \"0x1234567890abcdef\",\n  \"message\": \"Login to TrataTech API\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/auth/login"
+          }
+        },
+        {
+          "name": "Refresh Token",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"your-refresh-token-here\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/auth/refresh"
+          }
+        }
+      ]
+    },
+    {
+      "name": "🏷️ Product Passport & Brands",
+      "item": [
+        {
+          "name": "Register & Activate Brand",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Rolex Watch\",\n  \"description\": \"Luxury watch manufacturer\",\n  \"website\": \"https://rolex.com\",\n  \"authorizedCountries\": [\"US\", \"CA\", \"EU\"],\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Rolex Brand Registration\",\n      \"description\": \"Official brand registration for Rolex watches\",\n      \"image\": \"https://example.com/rolex-logo.png\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Brand Type\",\n          \"value\": \"Luxury Watches\"\n        },\n        {\n          \"trait_type\": \"Established\",\n          \"value\": \"1905\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/product-passport/brands"
+          }
+        },
+        {
+          "name": "Get All Brands",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/product-passport/brands"
+          }
+        },
+        {
+          "name": "Get Brand by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/product-passport/brands/1"
+          }
+        },
+        {
+          "name": "Check Brand Authorization Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/product-passport/brands/status/{{testAddress}}"
+          }
+        },
+        {
+          "name": "Create Product Passport",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"brandId\": 1,\n  \"productName\": \"Rolex Submariner\",\n  \"productDescription\": \"Professional diving watch\",\n  \"serialNumber\": \"R123456789\",\n  \"manufacturingDate\": 1640995200,\n  \"expiryDate\": 1672531200,\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Rolex Submariner R123456789\",\n      \"description\": \"Professional diving watch with water resistance up to 300m\",\n      \"image\": \"https://example.com/submariner.jpg\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Model\",\n          \"value\": \"Submariner\"\n        },\n        {\n          \"trait_type\": \"Water Resistance\",\n          \"value\": \"300m\"\n        },\n        {\n          \"trait_type\": \"Movement\",\n          \"value\": \"Automatic\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/product-passport/passports"
+          }
+        },
+        {
+          "name": "Get Product Passport",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/product-passport/passports/1"
+          }
+        },
+        {
+          "name": "Update Product Passport",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Updated Rolex Submariner R123456789\",\n      \"description\": \"Updated professional diving watch with enhanced features\",\n      \"image\": \"https://example.com/submariner-updated.jpg\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Model\",\n          \"value\": \"Submariner\"\n        },\n        {\n          \"trait_type\": \"Water Resistance\",\n          \"value\": \"300m\"\n        },\n        {\n          \"trait_type\": \"Movement\",\n          \"value\": \"Automatic\"\n        },\n        {\n          \"trait_type\": \"Updated\",\n          \"value\": \"2024-01-15\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/product-passport/passports/1"
+          }
+        },
+        {
+          "name": "Create Certificate",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"passportId\": 1,\n  \"certificateType\": \"Quality Assurance\",\n  \"issueDate\": 1640995200,\n  \"expiryDate\": 1672531200,\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Quality Assurance Certificate\",\n      \"description\": \"Official quality assurance certificate for Rolex Submariner\",\n      \"image\": \"https://example.com/certificate.jpg\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Certificate Type\",\n          \"value\": \"Quality Assurance\"\n        },\n        {\n          \"trait_type\": \"Issued By\",\n          \"value\": \"Rolex SA\"\n        },\n        {\n          \"trait_type\": \"Valid Until\",\n          \"value\": \"2023-01-01\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/product-passport/certificates"
+          }
+        },
+        {
+          "name": "Get Certificate by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/product-passport/certificates/1"
+          }
+        },
+        {
+          "name": "Get Fee Structure",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/product-passport/fees"
+          }
+        }
+      ]
+    },
+    {
+      "name": "📋 Provenance & Service Records",
+      "item": [
+        {
+          "name": "Create Provenance Entry",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"passportId\": 1,\n  \"entryType\": \"TRANSFER\",\n  \"location\": \"New York, USA\",\n  \"description\": \"Product transferred to retail store\",\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Transfer Record - New York\",\n      \"description\": \"Product transfer to authorized retail location\",\n      \"image\": \"https://example.com/transfer.jpg\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Transfer Type\",\n          \"value\": \"Retail Distribution\"\n        },\n        {\n          \"trait_type\": \"Location\",\n          \"value\": \"New York, USA\"\n        },\n        {\n          \"trait_type\": \"Authorized Dealer\",\n          \"value\": \"Rolex Boutique NYC\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/provenance/entries"
+          }
+        },
+        {
+          "name": "Get Provenance Entry",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/provenance/entries/1"
+          }
+        },
+        {
+          "name": "Get Provenance History",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/provenance/history/1?limit=10&offset=0"
+          }
+        },
+        {
+          "name": "Create Service Record",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"passportId\": 1,\n  \"serviceType\": \"Maintenance\",\n  \"serviceDescription\": \"Regular maintenance and cleaning\",\n  \"serviceDate\": 1640995200,\n  \"nextServiceDate\": 1672531200,\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Maintenance Service Record\",\n      \"description\": \"Regular maintenance service performed on Rolex Submariner\",\n      \"image\": \"https://example.com/service.jpg\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Service Type\",\n          \"value\": \"Maintenance\"\n        },\n        {\n          \"trait_type\": \"Service Center\",\n          \"value\": \"Rolex Service Center NYC\"\n        },\n        {\n          \"trait_type\": \"Technician\",\n          \"value\": \"John Smith\"\n        },\n        {\n          \"trait_type\": \"Next Service\",\n          \"value\": \"2023-01-01\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/provenance/services"
+          }
+        },
+        {
+          "name": "Get Service Record",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/provenance/services/1"
+          }
+        },
+        {
+          "name": "Get Service History",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/provenance/services/1?limit=10&offset=0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "🏠 Ownership Registry",
+      "item": [
+        {
+          "name": "Create Ownership Deed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"passportId\": 1,\n  \"ownerAddress\": \"{{testAddress}}\",\n  \"purchaseDate\": 1640995200,\n  \"purchasePrice\": \"15000\",\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Ownership Deed - Rolex Submariner\",\n      \"description\": \"Digital ownership deed for Rolex Submariner R123456789\",\n      \"image\": \"https://example.com/deed.jpg\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Ownership Type\",\n          \"value\": \"Full Ownership\"\n        },\n        {\n          \"trait_type\": \"Purchase Price\",\n          \"value\": \"$15,000\"\n        },\n        {\n          \"trait_type\": \"Purchase Date\",\n          \"value\": \"2022-01-01\"\n        },\n        {\n          \"trait_type\": \"Warranty\",\n          \"value\": \"5 Years\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/ownership/deeds"
+          }
+        },
+        {
+          "name": "Get Ownership Deed",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/ownership/deeds/1"
+          }
+        },
+        {
+          "name": "Transfer Ownership Deed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"newOwner\": \"0x9876543210987654321098765432109876543210\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/ownership/deeds/1/transfer"
+          }
+        },
+        {
+          "name": "Create Transfer Request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deedId\": 1,\n  \"requesterAddress\": \"{{testAddress}}\",\n  \"proposedPrice\": \"16000\",\n  \"reason\": \"Upgrade to newer model\",\n  \"expirationDate\": 1672531200\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/ownership/transfer-requests"
+          }
+        }
+      ]
+    },
+    {
+      "name": "🎉 Business Operations",
+      "item": [
+        {
+          "name": "Create Event Invite",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"eventName\": \"Rolex VIP Collection Launch\",\n  \"eventDescription\": \"Exclusive launch event for new Rolex collection\",\n  \"eventDate\": 1672531200,\n  \"maxAttendees\": 100,\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Rolex VIP Collection Launch\",\n      \"description\": \"Exclusive launch event for new Rolex collection with special guests\",\n      \"image\": \"https://example.com/event.jpg\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Event Type\",\n          \"value\": \"Product Launch\"\n        },\n        {\n          \"trait_type\": \"Venue\",\n          \"value\": \"Rolex Boutique NYC\"\n        },\n        {\n          \"trait_type\": \"Dress Code\",\n          \"value\": \"Black Tie\"\n        },\n        {\n          \"trait_type\": \"Max Attendees\",\n          \"value\": \"100\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/business/events"
+          }
+        },
+        {
+          "name": "Get Event",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/business/events/1"
+          }
+        },
+        {
+          "name": "Submit RSVP",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{userApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            },
+            "url": "{{baseUrl}}/api/v1/business/events/1/rsvp"
+          }
+        },
+        {
+          "name": "Create Product Launch",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productName\": \"Rolex GMT-Master II\",\n  \"productDescription\": \"New GMT-Master II with enhanced features\",\n  \"launchDate\": 1672531200,\n  \"earlyAccessPeriod\": 86400,\n  \"maxEarlyAccessUsers\": 1000,\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Rolex GMT-Master II Launch\",\n      \"description\": \"Official launch of the new GMT-Master II with enhanced features\",\n      \"image\": \"https://example.com/gmt-master.jpg\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Product Type\",\n          \"value\": \"GMT Watch\"\n        },\n        {\n          \"trait_type\": \"Launch Date\",\n          \"value\": \"2023-01-01\"\n        },\n        {\n          \"trait_type\": \"Early Access Period\",\n          \"value\": \"24 hours\"\n        },\n        {\n          \"trait_type\": \"Max Early Access\",\n          \"value\": \"1000 users\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/business/launches"
+          }
+        },
+        {
+          "name": "Get Product Launch",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/business/launches/1"
+          }
+        },
+        {
+          "name": "Grant Early Access",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userAddress\": \"{{testAddress}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/business/launches/1/early-access"
+          }
+        },
+        {
+          "name": "Create Art Drop",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"artistName\": \"Digital Artist Pro\",\n  \"artworkTitle\": \"Time & Space\",\n  \"artworkDescription\": \"Abstract digital artwork inspired by timepieces\",\n  \"editionSize\": 100,\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Time & Space - Digital Art\",\n      \"description\": \"Abstract digital artwork inspired by timepieces and luxury watches\",\n      \"image\": \"https://example.com/artwork.jpg\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Artist\",\n          \"value\": \"Digital Artist Pro\"\n        },\n        {\n          \"trait_type\": \"Art Style\",\n          \"value\": \"Abstract\"\n        },\n        {\n          \"trait_type\": \"Edition Size\",\n          \"value\": \"100\"\n        },\n        {\n          \"trait_type\": \"Medium\",\n          \"value\": \"Digital\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/business/art-drops"
+          }
+        },
+        {
+          "name": "Get Art Drop",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/business/art-drops/1"
+          }
+        },
+        {
+          "name": "Airdrop Artwork",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"recipients\": [\"{{testAddress}}\", \"0x9876543210987654321098765432109876543210\"]\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/business/art-drops/1/airdrop"
+          }
+        },
+        {
+          "name": "Create Offer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"offerName\": \"Holiday Special Discount\",\n  \"offerDescription\": \"Special holiday discount for loyal customers\",\n  \"discountPercentage\": 15.0,\n  \"validFrom\": 1640995200,\n  \"validUntil\": 1672531200,\n  \"maxRedemptions\": 500,\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Holiday Special Discount\",\n      \"description\": \"Special holiday discount for loyal customers - 15% off selected items\",\n      \"image\": \"https://example.com/offer.jpg\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Discount Type\",\n          \"value\": \"Percentage\"\n        },\n        {\n          \"trait_type\": \"Discount Value\",\n          \"value\": \"15%\"\n        },\n        {\n          \"trait_type\": \"Valid From\",\n          \"value\": \"2022-01-01\"\n        },\n        {\n          \"trait_type\": \"Valid Until\",\n          \"value\": \"2023-01-01\"\n        },\n        {\n          \"trait_type\": \"Max Redemptions\",\n          \"value\": \"500\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/business/offers"
+          }
+        },
+        {
+          "name": "Get Offer",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/business/offers/1"
+          }
+        },
+        {
+          "name": "Redeem Offer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{userApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            },
+            "url": "{{baseUrl}}/api/v1/business/offers/1/redeem"
+          }
+        }
+      ]
+    },
+    {
+      "name": "⚙️ Admin Operations",
+      "item": [
+        {
+          "name": "Authorize Brand (Admin Only)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"brandAddress\": \"{{testAddress}}\",\n  \"brandName\": \"Rolex Watch\",\n  \"description\": \"Luxury watch manufacturer\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/admin/brands"
+          }
+        },
+        {
+          "name": "Authorize Operator",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"operatorAddress\": \"{{testAddress}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/admin/operators"
+          }
+        },
+        {
+          "name": "Revoke Operator",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/admin/operators/{{testAddress}}"
+          }
+        },
+        {
+          "name": "Update Fee Structure",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"feeType\": \"brandRegistration\",\n  \"newFee\": \"1000000000000000000\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/admin/fees"
+          }
+        },
+        {
+          "name": "Emergency Stop",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/admin/emergency-stop"
+          }
+        },
+        {
+          "name": "Resume Operations",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/admin/resume"
+          }
+        },
+        {
+          "name": "Get System Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/admin/status"
+          }
+        },
+        {
+          "name": "Get Contract Addresses",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/admin/contracts"
+          }
+        },
+        {
+          "name": "Emergency Recovery",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{adminApiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"recipient\": \"{{testAddress}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/admin/recovery"
+          }
+        }
+      ]
+    }
+  ]
+}

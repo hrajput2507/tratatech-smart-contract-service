@@ -1,0 +1,28 @@
+{
+  "network": "polygonAmoy",
+  "deployer": "0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927",
+  "forwarder": "0xb774b47f180833AFf29edD7977a97D2Ac51f2967",
+  "contracts": {
+    "productPassport": {
+      "proxy": "0x34cc1828eE50334DF316D952FA1a4b43C1EC143e"
+    },
+    "provenance": {
+      "proxy": "0xdD435877bF2465AaEe4CDb5710Ae4850eaEBbF7f"
+    },
+    "ownershipRegistry": {
+      "proxy": "0xae3583d4256C2c01d1451126356aE19e2d065614"
+    },
+    "mainContract": {
+      "proxy": "0x2e0C1A2d91EEd498b8B94Ee54bD07F700E28906F"
+    },
+    "forwarders": {
+      "minimal": "0xb774b47f180833AFf29edD7977a97D2Ac51f2967",
+      "tratatech": "0x1c9ac83Ef718a4B207A16ac659485d19D29D7ef8"
+    }
+  },
+  "timestamp": "2025-09-12T13:20:00.000Z",
+  "upgradeable": true,
+  "pattern": "UUPS",
+  "gasless": true,
+  "status": "deployed"
+}
