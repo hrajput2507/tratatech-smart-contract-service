@@ -25,6 +25,46 @@
       "address": "0x2e0C1A2d91EEd498b8B94Ee54bD07F700E28906F",
       "txHash": "0xa3ede07b3abb7d90467a25b272893e134520735fa6944eaa9703bfbbfba1d0d1",
       "kind": "uups"
+    },
+    {
+      "address": "0x5F2e86756243CdF8bf3bB475B6109229C3c3bD53",
+      "txHash": "0x9d0104150ce01afc7812792b42694bfce1fc1e626a83329612caaa04a4d5678d",
+      "kind": "uups"
+    },
+    {
+      "address": "0xdD0738c1B3cC295992C11985295E8843070cD80B",
+      "txHash": "0x81feac6a0660a422538edbd7769c036a981b1a9fc9ffeb84e64de7519ba00bb8",
+      "kind": "uups"
+    },
+    {
+      "address": "0xe8ABcA59aa4b8648A2e2a7Bb63736D95F01Ca7dC",
+      "txHash": "0x7ab840a7073e87e672d1624dc06b9c492ac8cad7dde26b4d35f28510b4666c96",
+      "kind": "uups"
+    },
+    {
+      "address": "0x3372AFF8427e1ab1CFBeC7CFaf8BAb4CBC10aDDD",
+      "txHash": "0x649612397b30e95863f77b87b864021c06f7aaf4e44f8fb451dd955e035eebdc",
+      "kind": "uups"
+    },
+    {
+      "address": "0xB12550533aBADe4F7fd31b0a4481A3731Cfa4FE6",
+      "txHash": "0x6b4e99b6595bbd19a9ff3bcf8090e7e3e06031178bb9c1a19e5574e823d7475e",
+      "kind": "uups"
+    },
+    {
+      "address": "0x125CE8B8d34A85a05bd22a1865cdfC10307f7979",
+      "txHash": "0x25aae719dd126028bd028187712c5a22759c10444cee86fdcca149542a7d4294",
+      "kind": "uups"
+    },
+    {
+      "address": "0x4Fc6a8d28A6B60f85BC359691AdBEc0b441D4371",
+      "txHash": "0x2703e6492b2a117b7be945201bf2010dea5746a5e62942ac9f69c8ee1979b913",
+      "kind": "uups"
+    },
+    {
+      "address": "0xe6ee071ADc22302C87AcbC4491d3e6b5F0e13C63",
+      "txHash": "0xa4f08be820a37b9f65f14f29c03e490887a057256c4206cee42b20dce0a92bf0",
+      "kind": "uups"
     }
   ],
   "impls": {
@@ -2356,6 +2396,5662 @@
               }
             ],
             "numberOfBytes": "352"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:43",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.ERC721": [
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:27",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:30",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_owners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:32",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:34",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_tokenApprovals",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:36",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:38",
+              "offset": 0,
+              "slot": "5"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "726e8b0428a4ef4d3cc4410590ceac47e072773d122b49d0ad28d934fe499c54": {
+      "address": "0xBe66DBC8EaA52d4108bC51128AED12715b3eA0F9",
+      "txHash": "0xe24248bd078e956f9222cdd1358616f36a001be54eda91fdc9201ab52004da5c",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_tokenIds",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:113"
+          },
+          {
+            "label": "_eventIds",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:114"
+          },
+          {
+            "label": "_launchIds",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:115"
+          },
+          {
+            "label": "_dppIds",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:116"
+          },
+          {
+            "label": "_dropIds",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:117"
+          },
+          {
+            "label": "_offerIds",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:118"
+          },
+          {
+            "label": "_events",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_uint256,t_struct(EventInvite)10793_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:121"
+          },
+          {
+            "label": "_launches",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_uint256,t_struct(ProductLaunch)10822_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:122"
+          },
+          {
+            "label": "_dpps",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_uint256,t_struct(DigitalProductPassport)10839_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:123"
+          },
+          {
+            "label": "_drops",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_uint256,t_struct(DigitalArtDrop)10862_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:124"
+          },
+          {
+            "label": "_offers",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_mapping(t_uint256,t_struct(Offer)10897_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:125"
+          },
+          {
+            "label": "_tokenTypes",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_mapping(t_uint256,t_enum(TokenType)10963)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:128"
+          },
+          {
+            "label": "_tokenReferences",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:129"
+          },
+          {
+            "label": "_authorizedBrands",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:132"
+          },
+          {
+            "label": "_authorizedOperators",
+            "offset": 0,
+            "slot": "14",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:133"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "15",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:136"
+          },
+          {
+            "label": "_emergencyStop",
+            "offset": 0,
+            "slot": "65",
+            "type": "t_bool",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:139"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+            "label": "mapping(address => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ERC721Storage)285_storage": {
+            "label": "struct ERC721Upgradeable.ERC721Storage",
+            "members": [
+              {
+                "label": "_name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_symbol",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_owners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_balances",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_tokenApprovals",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_operatorApprovals",
+                "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(InitializableStorage)118_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)604_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)668_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_enum(TokenType)10963": {
+            "label": "enum TrataTechMainUpgradeable.TokenType",
+            "members": [
+              "EVENT_INVITE",
+              "PRODUCT_LAUNCH",
+              "DIGITAL_ART",
+              "OFFER_COUPON",
+              "DPP_PASSPORT"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_enum(TokenType)10963)": {
+            "label": "mapping(uint256 => enum TrataTechMainUpgradeable.TokenType)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(DigitalArtDrop)10862_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.DigitalArtDrop)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(DigitalProductPassport)10839_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.DigitalProductPassport)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(EventInvite)10793_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.EventInvite)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Offer)10897_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.Offer)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ProductLaunch)10822_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.ProductLaunch)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(DigitalArtDrop)10862_storage": {
+            "label": "struct TrataTechMainUpgradeable.DigitalArtDrop",
+            "members": [
+              {
+                "label": "dropId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "artistName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "artworkTitle",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "edition",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "maxEditions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isLimited",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "6"
+              },
+              {
+                "label": "currentAirdrops",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "airdroppedTo",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "8"
+              }
+            ],
+            "numberOfBytes": "288"
+          },
+          "t_struct(DigitalProductPassport)10839_storage": {
+            "label": "struct TrataTechMainUpgradeable.DigitalProductPassport",
+            "members": [
+              {
+                "label": "dppId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "productId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "brandId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "5"
+              },
+              {
+                "label": "metadataHash",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          },
+          "t_struct(EventInvite)10793_storage": {
+            "label": "struct TrataTechMainUpgradeable.EventInvite",
+            "members": [
+              {
+                "label": "eventId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "eventName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "eventDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "eventDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "maxAttendees",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "currentAttendees",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "isCancelled",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "7"
+              },
+              {
+                "label": "attendees",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "attendeeTokens",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "9"
+              }
+            ],
+            "numberOfBytes": "320"
+          },
+          "t_struct(Offer)10897_storage": {
+            "label": "struct TrataTechMainUpgradeable.Offer",
+            "members": [
+              {
+                "label": "offerId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "discountPercentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validFrom",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "validUntil",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "productScope",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "conditions",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isMerkleBased",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "8"
+              },
+              {
+                "label": "merkleRoot",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "maxRedemptions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "currentRedemptions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "redeemedBy",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "userRedemptions",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          },
+          "t_struct(ProductLaunch)10822_storage": {
+            "label": "struct TrataTechMainUpgradeable.ProductLaunch",
+            "members": [
+              {
+                "label": "launchId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "productName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "productDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "launchDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "earlyAccessEndDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isLaunched",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "6"
+              },
+              {
+                "label": "maxEarlyAccess",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "currentEarlyAccess",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "earlyAccessUsers",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "preOrders",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "10"
+              }
+            ],
+            "numberOfBytes": "352"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:43",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.ERC721": [
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:27",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:30",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_owners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:32",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:34",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_tokenApprovals",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:36",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:38",
+              "offset": 0,
+              "slot": "5"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "5f4ef43c00a38672a744c4fec470f7dd8fba7f4e44d3fb101cd9ce2ab09a3c84": {
+      "address": "0xab3545A1bB7CcF6e0e69C1dE97eF62fAdAac313D",
+      "txHash": "0xfbe1828c644d1a753579d79616995a183524ae05b9f459f663dec17383e503a5",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_tokenIds",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:113"
+          },
+          {
+            "label": "_eventIds",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:114"
+          },
+          {
+            "label": "_launchIds",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:115"
+          },
+          {
+            "label": "_dppIds",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:116"
+          },
+          {
+            "label": "_dropIds",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:117"
+          },
+          {
+            "label": "_offerIds",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:118"
+          },
+          {
+            "label": "_events",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_uint256,t_struct(EventInvite)10793_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:121"
+          },
+          {
+            "label": "_launches",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_uint256,t_struct(ProductLaunch)10822_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:122"
+          },
+          {
+            "label": "_dpps",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_uint256,t_struct(DigitalProductPassport)10839_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:123"
+          },
+          {
+            "label": "_drops",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_uint256,t_struct(DigitalArtDrop)10862_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:124"
+          },
+          {
+            "label": "_offers",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_mapping(t_uint256,t_struct(Offer)10897_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:125"
+          },
+          {
+            "label": "_tokenTypes",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_mapping(t_uint256,t_enum(TokenType)10963)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:128"
+          },
+          {
+            "label": "_tokenReferences",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:129"
+          },
+          {
+            "label": "_authorizedBrands",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:132"
+          },
+          {
+            "label": "_authorizedOperators",
+            "offset": 0,
+            "slot": "14",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:133"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "15",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:136"
+          },
+          {
+            "label": "_emergencyStop",
+            "offset": 0,
+            "slot": "65",
+            "type": "t_bool",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:139"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+            "label": "mapping(address => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ERC721Storage)285_storage": {
+            "label": "struct ERC721Upgradeable.ERC721Storage",
+            "members": [
+              {
+                "label": "_name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_symbol",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_owners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_balances",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_tokenApprovals",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_operatorApprovals",
+                "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(InitializableStorage)118_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)604_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)668_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_enum(TokenType)10963": {
+            "label": "enum TrataTechMainUpgradeable.TokenType",
+            "members": [
+              "EVENT_INVITE",
+              "PRODUCT_LAUNCH",
+              "DIGITAL_ART",
+              "OFFER_COUPON",
+              "DPP_PASSPORT"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_enum(TokenType)10963)": {
+            "label": "mapping(uint256 => enum TrataTechMainUpgradeable.TokenType)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(DigitalArtDrop)10862_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.DigitalArtDrop)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(DigitalProductPassport)10839_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.DigitalProductPassport)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(EventInvite)10793_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.EventInvite)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Offer)10897_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.Offer)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ProductLaunch)10822_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.ProductLaunch)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(DigitalArtDrop)10862_storage": {
+            "label": "struct TrataTechMainUpgradeable.DigitalArtDrop",
+            "members": [
+              {
+                "label": "dropId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "artistName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "artworkTitle",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "edition",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "maxEditions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isLimited",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "6"
+              },
+              {
+                "label": "currentAirdrops",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "airdroppedTo",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "8"
+              }
+            ],
+            "numberOfBytes": "288"
+          },
+          "t_struct(DigitalProductPassport)10839_storage": {
+            "label": "struct TrataTechMainUpgradeable.DigitalProductPassport",
+            "members": [
+              {
+                "label": "dppId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "productId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "brandId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "5"
+              },
+              {
+                "label": "metadataHash",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          },
+          "t_struct(EventInvite)10793_storage": {
+            "label": "struct TrataTechMainUpgradeable.EventInvite",
+            "members": [
+              {
+                "label": "eventId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "eventName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "eventDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "eventDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "maxAttendees",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "currentAttendees",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "isCancelled",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "7"
+              },
+              {
+                "label": "attendees",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "attendeeTokens",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "9"
+              }
+            ],
+            "numberOfBytes": "320"
+          },
+          "t_struct(Offer)10897_storage": {
+            "label": "struct TrataTechMainUpgradeable.Offer",
+            "members": [
+              {
+                "label": "offerId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "discountPercentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validFrom",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "validUntil",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "productScope",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "conditions",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isMerkleBased",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "8"
+              },
+              {
+                "label": "merkleRoot",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "maxRedemptions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "currentRedemptions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "redeemedBy",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "userRedemptions",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          },
+          "t_struct(ProductLaunch)10822_storage": {
+            "label": "struct TrataTechMainUpgradeable.ProductLaunch",
+            "members": [
+              {
+                "label": "launchId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "productName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "productDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "launchDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "earlyAccessEndDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isLaunched",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "6"
+              },
+              {
+                "label": "maxEarlyAccess",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "currentEarlyAccess",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "earlyAccessUsers",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "preOrders",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "10"
+              }
+            ],
+            "numberOfBytes": "352"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:43",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.ERC721": [
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:27",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:30",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_owners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:32",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:34",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_tokenApprovals",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:36",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:38",
+              "offset": 0,
+              "slot": "5"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "2a5d58e49df03927737585ebc75854e6032c9ce37daeab46ac418096d1966337": {
+      "address": "0xE12e8137ff3F8433a561aA6E1c957276F614dB28",
+      "txHash": "0x8aa2386c551502aeb4c28c7046cf028e686127a2247a804b2af157dec0af9b13",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_passportIds",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:73"
+          },
+          {
+            "label": "_certificateIds",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:74"
+          },
+          {
+            "label": "brands",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Brand)15594_storage)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:77"
+          },
+          {
+            "label": "authorizedBrands",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:78"
+          },
+          {
+            "label": "authorizedOperators",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:79"
+          },
+          {
+            "label": "authorizedManufacturers",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:80"
+          },
+          {
+            "label": "authorizedCertifiers",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:81"
+          },
+          {
+            "label": "productPassports",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_uint256,t_struct(ProductPassport)15574_storage)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:84"
+          },
+          {
+            "label": "serialNumberToPassportId",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:85"
+          },
+          {
+            "label": "brandPassports",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:86"
+          },
+          {
+            "label": "certificates",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_mapping(t_uint256,t_struct(ManufacturingCertificate)15615_storage)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:89"
+          },
+          {
+            "label": "passportCertificates",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:90"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:93"
+          },
+          {
+            "label": "emergencyStop",
+            "offset": 0,
+            "slot": "62",
+            "type": "t_bool",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:96"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)118_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)604_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)668_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(string => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Brand)15594_storage)": {
+            "label": "mapping(string => struct TrataTechProductPassportUpgradeable.Brand)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ManufacturingCertificate)15615_storage)": {
+            "label": "mapping(uint256 => struct TrataTechProductPassportUpgradeable.ManufacturingCertificate)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ProductPassport)15574_storage)": {
+            "label": "mapping(uint256 => struct TrataTechProductPassportUpgradeable.ProductPassport)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Brand)15594_storage": {
+            "label": "struct TrataTechProductPassportUpgradeable.Brand",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "authorizedCountries",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "5"
+              },
+              {
+                "label": "reserved",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_struct(ManufacturingCertificate)15615_storage": {
+            "label": "struct TrataTechProductPassportUpgradeable.ManufacturingCertificate",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "passportId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "certificateType",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "certificateNumber",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "issuingAuthority",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "issueDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "expiryDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              }
+            ],
+            "numberOfBytes": "320"
+          },
+          "t_struct(ProductPassport)15574_storage": {
+            "label": "struct TrataTechProductPassportUpgradeable.ProductPassport",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "serialNumber",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "brandId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "productName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "productDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "materials",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "manufacturingLocation",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "manufacturingDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "metadataHash",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "additionalAttributes",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "updatedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:43",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "8fefaeec49bd4f3c34d17db3a7360dc24f7147ae416edceb041ab2073841fe2c": {
+      "address": "0xDea1653192bcB8A4943F8253Ed8a91989cA8B493",
+      "txHash": "0xf712f51a6c1a762383188a24335dc1458acc1ee2c06037af056bae04f2373162",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_entryIds",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:90"
+          },
+          {
+            "label": "_serviceIds",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:91"
+          },
+          {
+            "label": "provenanceEntries",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_uint256,t_struct(ProvenanceEntry)17030_storage)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:94"
+          },
+          {
+            "label": "serviceRecords",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_struct(ServiceRecord)17060_storage)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:95"
+          },
+          {
+            "label": "transferHistories",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_uint256,t_struct(TransferHistory)17077_storage)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:96"
+          },
+          {
+            "label": "passportToEntries",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:97"
+          },
+          {
+            "label": "passportToServices",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:98"
+          },
+          {
+            "label": "authorizedRecorders",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:99"
+          },
+          {
+            "label": "authorizedServiceProviders",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:100"
+          },
+          {
+            "label": "authorizedOperators",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:101"
+          },
+          {
+            "label": "provenanceEntryFee",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_uint256",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:104"
+          },
+          {
+            "label": "serviceRecordFee",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_uint256",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:105"
+          },
+          {
+            "label": "emergencyStop",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_bool",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:108"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:114"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)118_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)604_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)668_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_enum(ProvenanceType)17088": {
+            "label": "enum TrataTechProvenanceUpgradeable.ProvenanceType",
+            "members": [
+              "MANUFACTURING",
+              "TRANSFER",
+              "SERVICE",
+              "REPAIR",
+              "MAINTENANCE",
+              "INSPECTION",
+              "CERTIFICATION",
+              "RECALL",
+              "DISPOSAL",
+              "CUSTOM"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ProvenanceEntry)17030_storage)": {
+            "label": "mapping(uint256 => struct TrataTechProvenanceUpgradeable.ProvenanceEntry)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ServiceRecord)17060_storage)": {
+            "label": "mapping(uint256 => struct TrataTechProvenanceUpgradeable.ServiceRecord)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(TransferHistory)17077_storage)": {
+            "label": "mapping(uint256 => struct TrataTechProvenanceUpgradeable.TransferHistory)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ProvenanceEntry)17030_storage": {
+            "label": "struct TrataTechProvenanceUpgradeable.ProvenanceEntry",
+            "members": [
+              {
+                "label": "entryId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "passportId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "entryType",
+                "type": "t_enum(ProvenanceType)17088",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "from",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "2"
+              },
+              {
+                "label": "to",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "location",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "metadataHash",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "recorder",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "9"
+              },
+              {
+                "label": "additionalData",
+                "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "dataKeys",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_struct(ServiceRecord)17060_storage": {
+            "label": "struct TrataTechProvenanceUpgradeable.ServiceRecord",
+            "members": [
+              {
+                "label": "serviceId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "passportId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "serviceType",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "serviceProvider",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "serviceDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "serviceDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "nextServiceDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "certificateNumber",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "serviceProviderAddress",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "9"
+              },
+              {
+                "label": "serviceDetails",
+                "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "detailKeys",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_struct(TransferHistory)17077_storage": {
+            "label": "struct TrataTechProvenanceUpgradeable.TransferHistory",
+            "members": [
+              {
+                "label": "passportId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "transferEntryIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "serviceEntryIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "totalTransfers",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "totalServices",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "currentOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "lastTransferDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:43",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "2e778c9be5fa4216b8821d9ddd5461f42fd7bdb5dc46280b59ba50ba8ca013fd": {
+      "address": "0x1DB92aAE6E4ecC4a109a83C3B662376b7744372F",
+      "txHash": "0x13702a021e30b025813156d2b3568127b97e8f4806aa3250688c554654d4bb4f",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_deedIds",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:94"
+          },
+          {
+            "label": "_requestIds",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:95"
+          },
+          {
+            "label": "ownershipDeeds",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_uint256,t_struct(OwnershipDeed)13382_storage)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:98"
+          },
+          {
+            "label": "transferRequests",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_struct(TransferRequest)13408_storage)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:99"
+          },
+          {
+            "label": "passportToDeed",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:100"
+          },
+          {
+            "label": "ownerToDeeds",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:101"
+          },
+          {
+            "label": "deedRoyalties",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_uint256,t_struct(RoyaltyInfo)13415_storage)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:102"
+          },
+          {
+            "label": "authorizedBrands",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:103"
+          },
+          {
+            "label": "authorizedOperators",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:104"
+          },
+          {
+            "label": "authorizedTransferAgents",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:105"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:108"
+          },
+          {
+            "label": "transferApprovalPeriod",
+            "offset": 0,
+            "slot": "60",
+            "type": "t_uint256",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:112"
+          },
+          {
+            "label": "maxTransferRequests",
+            "offset": 0,
+            "slot": "61",
+            "type": "t_uint256",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:113"
+          },
+          {
+            "label": "emergencyStop",
+            "offset": 0,
+            "slot": "62",
+            "type": "t_bool",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:116"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+            "label": "mapping(address => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ERC721Storage)285_storage": {
+            "label": "struct ERC721Upgradeable.ERC721Storage",
+            "members": [
+              {
+                "label": "_name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_symbol",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_owners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_balances",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_tokenApprovals",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_operatorApprovals",
+                "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(InitializableStorage)118_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)604_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)668_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_enum(TransferStatus)13421": {
+            "label": "enum TrataTechOwnershipRegistryUpgradeable.TransferStatus",
+            "members": [
+              "PENDING",
+              "APPROVED",
+              "REJECTED",
+              "EXPIRED",
+              "CANCELLED"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(address => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(OwnershipDeed)13382_storage)": {
+            "label": "mapping(uint256 => struct TrataTechOwnershipRegistryUpgradeable.OwnershipDeed)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(RoyaltyInfo)13415_storage)": {
+            "label": "mapping(uint256 => struct TrataTechOwnershipRegistryUpgradeable.RoyaltyInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(TransferRequest)13408_storage)": {
+            "label": "mapping(uint256 => struct TrataTechOwnershipRegistryUpgradeable.TransferRequest)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnershipDeed)13382_storage": {
+            "label": "struct TrataTechOwnershipRegistryUpgradeable.OwnershipDeed",
+            "members": [
+              {
+                "label": "deedId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "passportId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "acquisitionDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "acquisitionPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "acquisitionMethod",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "metadataHash",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isLocked",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "8"
+              },
+              {
+                "label": "lockExpiry",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "previousOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "pendingRequestCount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "additionalData",
+                "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "dataKeys",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          },
+          "t_struct(RoyaltyInfo)13415_storage": {
+            "label": "struct TrataTechOwnershipRegistryUpgradeable.RoyaltyInfo",
+            "members": [
+              {
+                "label": "recipient",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "percentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(TransferRequest)13408_storage": {
+            "label": "struct TrataTechOwnershipRegistryUpgradeable.TransferRequest",
+            "members": [
+              {
+                "label": "requestId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "deedId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "from",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "to",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "requestDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "proposedPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "transferReason",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "status",
+                "type": "t_enum(TransferStatus)13421",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "requester",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "7"
+              },
+              {
+                "label": "expiryDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isApproved",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "approver",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "9"
+              }
+            ],
+            "numberOfBytes": "320"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:43",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.ERC721": [
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:27",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:30",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_owners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:32",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:34",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_tokenApprovals",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:36",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:38",
+              "offset": 0,
+              "slot": "5"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "f3d59df43822e8d69feb044f9e6c3917f61ae9da3ff538c0e372411ab017d32b": {
+      "address": "0xc83C0863ed516D290f05D099eeDD5B3a309e17C1",
+      "txHash": "0x30d6bfb2878e79e640a7c9bbfb4bcde75d1570575d37e788ba6a9ec46e6b40aa",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_tokenIds",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:113"
+          },
+          {
+            "label": "_eventIds",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:114"
+          },
+          {
+            "label": "_launchIds",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:115"
+          },
+          {
+            "label": "_dppIds",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:116"
+          },
+          {
+            "label": "_dropIds",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:117"
+          },
+          {
+            "label": "_offerIds",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:118"
+          },
+          {
+            "label": "_events",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_uint256,t_struct(EventInvite)10793_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:121"
+          },
+          {
+            "label": "_launches",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_uint256,t_struct(ProductLaunch)10822_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:122"
+          },
+          {
+            "label": "_dpps",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_uint256,t_struct(DigitalProductPassport)10839_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:123"
+          },
+          {
+            "label": "_drops",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_uint256,t_struct(DigitalArtDrop)10862_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:124"
+          },
+          {
+            "label": "_offers",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_mapping(t_uint256,t_struct(Offer)10897_storage)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:125"
+          },
+          {
+            "label": "_tokenTypes",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_mapping(t_uint256,t_enum(TokenType)10963)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:128"
+          },
+          {
+            "label": "_tokenReferences",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:129"
+          },
+          {
+            "label": "_authorizedBrands",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:132"
+          },
+          {
+            "label": "_authorizedOperators",
+            "offset": 0,
+            "slot": "14",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:133"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "15",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:136"
+          },
+          {
+            "label": "_emergencyStop",
+            "offset": 0,
+            "slot": "65",
+            "type": "t_bool",
+            "contract": "TrataTechMainUpgradeable",
+            "src": "contracts/TrataTechMainUpgradeable.sol:139"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+            "label": "mapping(address => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ERC721Storage)285_storage": {
+            "label": "struct ERC721Upgradeable.ERC721Storage",
+            "members": [
+              {
+                "label": "_name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_symbol",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_owners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_balances",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_tokenApprovals",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_operatorApprovals",
+                "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(InitializableStorage)118_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)604_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)668_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_enum(TokenType)10963": {
+            "label": "enum TrataTechMainUpgradeable.TokenType",
+            "members": [
+              "EVENT_INVITE",
+              "PRODUCT_LAUNCH",
+              "DIGITAL_ART",
+              "OFFER_COUPON",
+              "DPP_PASSPORT"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_enum(TokenType)10963)": {
+            "label": "mapping(uint256 => enum TrataTechMainUpgradeable.TokenType)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(DigitalArtDrop)10862_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.DigitalArtDrop)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(DigitalProductPassport)10839_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.DigitalProductPassport)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(EventInvite)10793_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.EventInvite)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Offer)10897_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.Offer)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ProductLaunch)10822_storage)": {
+            "label": "mapping(uint256 => struct TrataTechMainUpgradeable.ProductLaunch)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(DigitalArtDrop)10862_storage": {
+            "label": "struct TrataTechMainUpgradeable.DigitalArtDrop",
+            "members": [
+              {
+                "label": "dropId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "artistName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "artworkTitle",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "edition",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "maxEditions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isLimited",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "6"
+              },
+              {
+                "label": "currentAirdrops",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "airdroppedTo",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "8"
+              }
+            ],
+            "numberOfBytes": "288"
+          },
+          "t_struct(DigitalProductPassport)10839_storage": {
+            "label": "struct TrataTechMainUpgradeable.DigitalProductPassport",
+            "members": [
+              {
+                "label": "dppId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "productId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "brandId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "5"
+              },
+              {
+                "label": "metadataHash",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          },
+          "t_struct(EventInvite)10793_storage": {
+            "label": "struct TrataTechMainUpgradeable.EventInvite",
+            "members": [
+              {
+                "label": "eventId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "eventName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "eventDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "eventDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "maxAttendees",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "currentAttendees",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "isCancelled",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "7"
+              },
+              {
+                "label": "attendees",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "attendeeTokens",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "9"
+              }
+            ],
+            "numberOfBytes": "320"
+          },
+          "t_struct(Offer)10897_storage": {
+            "label": "struct TrataTechMainUpgradeable.Offer",
+            "members": [
+              {
+                "label": "offerId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "discountPercentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validFrom",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "validUntil",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "productScope",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "conditions",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isMerkleBased",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "8"
+              },
+              {
+                "label": "merkleRoot",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "maxRedemptions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "currentRedemptions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "redeemedBy",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "userRedemptions",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          },
+          "t_struct(ProductLaunch)10822_storage": {
+            "label": "struct TrataTechMainUpgradeable.ProductLaunch",
+            "members": [
+              {
+                "label": "launchId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "productName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "productDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "launchDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "earlyAccessEndDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isLaunched",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "6"
+              },
+              {
+                "label": "maxEarlyAccess",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "currentEarlyAccess",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "earlyAccessUsers",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "preOrders",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "10"
+              }
+            ],
+            "numberOfBytes": "352"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:43",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.ERC721": [
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:27",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:30",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_owners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:32",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:34",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_tokenApprovals",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:36",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:38",
+              "offset": 0,
+              "slot": "5"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "e35c6c040be93f602a31ee73af5d471aa70b54142a2dbfa211c93792f9c11ebc": {
+      "address": "0x04eFA0Bfb61b9469b6c9376AbF3d18204c7df4ab",
+      "txHash": "0x2ad161870e272273eb785ac64c399287380dcb7dc224d020347493e2f57e593f",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_passportIds",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:73"
+          },
+          {
+            "label": "_certificateIds",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:74"
+          },
+          {
+            "label": "brands",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Brand)15594_storage)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:77"
+          },
+          {
+            "label": "authorizedBrands",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:78"
+          },
+          {
+            "label": "authorizedOperators",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:79"
+          },
+          {
+            "label": "authorizedManufacturers",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:80"
+          },
+          {
+            "label": "authorizedCertifiers",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:81"
+          },
+          {
+            "label": "productPassports",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_uint256,t_struct(ProductPassport)15574_storage)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:84"
+          },
+          {
+            "label": "serialNumberToPassportId",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:85"
+          },
+          {
+            "label": "brandPassports",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:86"
+          },
+          {
+            "label": "certificates",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_mapping(t_uint256,t_struct(ManufacturingCertificate)15615_storage)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:89"
+          },
+          {
+            "label": "passportCertificates",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:90"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:93"
+          },
+          {
+            "label": "emergencyStop",
+            "offset": 0,
+            "slot": "62",
+            "type": "t_bool",
+            "contract": "TrataTechProductPassportUpgradeable",
+            "src": "contracts/TrataTechProductPassportUpgradeable.sol:96"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)118_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)604_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)668_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(string => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Brand)15594_storage)": {
+            "label": "mapping(string => struct TrataTechProductPassportUpgradeable.Brand)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ManufacturingCertificate)15615_storage)": {
+            "label": "mapping(uint256 => struct TrataTechProductPassportUpgradeable.ManufacturingCertificate)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ProductPassport)15574_storage)": {
+            "label": "mapping(uint256 => struct TrataTechProductPassportUpgradeable.ProductPassport)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Brand)15594_storage": {
+            "label": "struct TrataTechProductPassportUpgradeable.Brand",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "authorizedCountries",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "5"
+              },
+              {
+                "label": "reserved",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_struct(ManufacturingCertificate)15615_storage": {
+            "label": "struct TrataTechProductPassportUpgradeable.ManufacturingCertificate",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "passportId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "certificateType",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "certificateNumber",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "issuingAuthority",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "issueDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "expiryDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              }
+            ],
+            "numberOfBytes": "320"
+          },
+          "t_struct(ProductPassport)15574_storage": {
+            "label": "struct TrataTechProductPassportUpgradeable.ProductPassport",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "serialNumber",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "brandId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "productName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "productDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "materials",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "manufacturingLocation",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "manufacturingDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "metadataHash",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "additionalAttributes",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "updatedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:43",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "d6cb99fc22c5674e9ad6e029060b931a7a2680b470d92dc989b3b73e916bdbeb": {
+      "address": "0x151702796a83D09Aa3421611887294579d751c17",
+      "txHash": "0x473bf503765e8011ae6603227cd9cdeaf5b502e1bcfeadb45842a77c7d791a0c",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_entryIds",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:90"
+          },
+          {
+            "label": "_serviceIds",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:91"
+          },
+          {
+            "label": "provenanceEntries",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_uint256,t_struct(ProvenanceEntry)17030_storage)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:94"
+          },
+          {
+            "label": "serviceRecords",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_struct(ServiceRecord)17060_storage)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:95"
+          },
+          {
+            "label": "transferHistories",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_uint256,t_struct(TransferHistory)17077_storage)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:96"
+          },
+          {
+            "label": "passportToEntries",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:97"
+          },
+          {
+            "label": "passportToServices",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:98"
+          },
+          {
+            "label": "authorizedRecorders",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:99"
+          },
+          {
+            "label": "authorizedServiceProviders",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:100"
+          },
+          {
+            "label": "authorizedOperators",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:101"
+          },
+          {
+            "label": "provenanceEntryFee",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_uint256",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:104"
+          },
+          {
+            "label": "serviceRecordFee",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_uint256",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:105"
+          },
+          {
+            "label": "emergencyStop",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_bool",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:108"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "TrataTechProvenanceUpgradeable",
+            "src": "contracts/TrataTechProvenanceUpgradeable.sol:114"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)118_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)604_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)668_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_enum(ProvenanceType)17088": {
+            "label": "enum TrataTechProvenanceUpgradeable.ProvenanceType",
+            "members": [
+              "MANUFACTURING",
+              "TRANSFER",
+              "SERVICE",
+              "REPAIR",
+              "MAINTENANCE",
+              "INSPECTION",
+              "CERTIFICATION",
+              "RECALL",
+              "DISPOSAL",
+              "CUSTOM"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ProvenanceEntry)17030_storage)": {
+            "label": "mapping(uint256 => struct TrataTechProvenanceUpgradeable.ProvenanceEntry)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ServiceRecord)17060_storage)": {
+            "label": "mapping(uint256 => struct TrataTechProvenanceUpgradeable.ServiceRecord)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(TransferHistory)17077_storage)": {
+            "label": "mapping(uint256 => struct TrataTechProvenanceUpgradeable.TransferHistory)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ProvenanceEntry)17030_storage": {
+            "label": "struct TrataTechProvenanceUpgradeable.ProvenanceEntry",
+            "members": [
+              {
+                "label": "entryId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "passportId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "entryType",
+                "type": "t_enum(ProvenanceType)17088",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "from",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "2"
+              },
+              {
+                "label": "to",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "location",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "metadataHash",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "recorder",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "9"
+              },
+              {
+                "label": "additionalData",
+                "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "dataKeys",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_struct(ServiceRecord)17060_storage": {
+            "label": "struct TrataTechProvenanceUpgradeable.ServiceRecord",
+            "members": [
+              {
+                "label": "serviceId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "passportId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "serviceType",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "serviceProvider",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "serviceDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "serviceDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "nextServiceDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "certificateNumber",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "serviceProviderAddress",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "9"
+              },
+              {
+                "label": "serviceDetails",
+                "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "detailKeys",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_struct(TransferHistory)17077_storage": {
+            "label": "struct TrataTechProvenanceUpgradeable.TransferHistory",
+            "members": [
+              {
+                "label": "passportId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "transferEntryIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "serviceEntryIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "totalTransfers",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "totalServices",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "currentOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "lastTransferDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:43",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "05a160c1e3816531fbc8da51be5ede3b3d00305c0fc1d78797eb6d829fda4cf1": {
+      "address": "0x7922F59f8599156681509C2d963BC16988C980De",
+      "txHash": "0x367102cf98887ac21878c391c942864e47fd9fe71bb6d0633a3cb35a7b4a17c2",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_deedIds",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:94"
+          },
+          {
+            "label": "_requestIds",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:95"
+          },
+          {
+            "label": "ownershipDeeds",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_uint256,t_struct(OwnershipDeed)13382_storage)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:98"
+          },
+          {
+            "label": "transferRequests",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_struct(TransferRequest)13408_storage)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:99"
+          },
+          {
+            "label": "passportToDeed",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:100"
+          },
+          {
+            "label": "ownerToDeeds",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:101"
+          },
+          {
+            "label": "deedRoyalties",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_uint256,t_struct(RoyaltyInfo)13415_storage)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:102"
+          },
+          {
+            "label": "authorizedBrands",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:103"
+          },
+          {
+            "label": "authorizedOperators",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:104"
+          },
+          {
+            "label": "authorizedTransferAgents",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:105"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:108"
+          },
+          {
+            "label": "transferApprovalPeriod",
+            "offset": 0,
+            "slot": "60",
+            "type": "t_uint256",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:112"
+          },
+          {
+            "label": "maxTransferRequests",
+            "offset": 0,
+            "slot": "61",
+            "type": "t_uint256",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:113"
+          },
+          {
+            "label": "emergencyStop",
+            "offset": 0,
+            "slot": "62",
+            "type": "t_bool",
+            "contract": "TrataTechOwnershipRegistryUpgradeable",
+            "src": "contracts/TrataTechOwnershipRegistryUpgradeable.sol:116"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+            "label": "mapping(address => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ERC721Storage)285_storage": {
+            "label": "struct ERC721Upgradeable.ERC721Storage",
+            "members": [
+              {
+                "label": "_name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_symbol",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_owners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_balances",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_tokenApprovals",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_operatorApprovals",
+                "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(InitializableStorage)118_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)604_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)668_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_enum(TransferStatus)13421": {
+            "label": "enum TrataTechOwnershipRegistryUpgradeable.TransferStatus",
+            "members": [
+              "PENDING",
+              "APPROVED",
+              "REJECTED",
+              "EXPIRED",
+              "CANCELLED"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(address => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(OwnershipDeed)13382_storage)": {
+            "label": "mapping(uint256 => struct TrataTechOwnershipRegistryUpgradeable.OwnershipDeed)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(RoyaltyInfo)13415_storage)": {
+            "label": "mapping(uint256 => struct TrataTechOwnershipRegistryUpgradeable.RoyaltyInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(TransferRequest)13408_storage)": {
+            "label": "mapping(uint256 => struct TrataTechOwnershipRegistryUpgradeable.TransferRequest)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnershipDeed)13382_storage": {
+            "label": "struct TrataTechOwnershipRegistryUpgradeable.OwnershipDeed",
+            "members": [
+              {
+                "label": "deedId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "passportId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "acquisitionDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "acquisitionPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "acquisitionMethod",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "ipfsCID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "metadataHash",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "isValid",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isLocked",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "8"
+              },
+              {
+                "label": "lockExpiry",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "previousOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "pendingRequestCount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "additionalData",
+                "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "dataKeys",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          },
+          "t_struct(RoyaltyInfo)13415_storage": {
+            "label": "struct TrataTechOwnershipRegistryUpgradeable.RoyaltyInfo",
+            "members": [
+              {
+                "label": "recipient",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "percentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(TransferRequest)13408_storage": {
+            "label": "struct TrataTechOwnershipRegistryUpgradeable.TransferRequest",
+            "members": [
+              {
+                "label": "requestId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "deedId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "from",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "to",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "requestDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "proposedPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "transferReason",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "status",
+                "type": "t_enum(TransferStatus)13421",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "requester",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "7"
+              },
+              {
+                "label": "expiryDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isApproved",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "approver",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "9"
+              }
+            ],
+            "numberOfBytes": "320"
           }
         },
         "namespaces": {

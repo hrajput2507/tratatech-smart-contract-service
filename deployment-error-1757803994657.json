@@ -1,0 +1,17 @@
+{
+  "network": "Polygon Amoy Testnet",
+  "chainId": 80002,
+  "deployer": "0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927",
+  "timestamp": "2025-09-13T22:52:18.130Z",
+  "contracts": {
+    "forwarder": "0x32A9b73A5Aa8EB7282D726d1897a55Bd88A688c5",
+    "main": "0xB12550533aBADe4F7fd31b0a4481A3731Cfa4FE6",
+    "productPassport": "0x125CE8B8d34A85a05bd22a1865cdfC10307f7979",
+    "provenance": "0x4Fc6a8d28A6B60f85BC359691AdBEc0b441D4371",
+    "ownership": "0xe6ee071ADc22302C87AcbC4491d3e6b5F0e13C63"
+  },
+  "transactions": {
+    "forwarder": "0xaf2b789970c5849ff824f921629a62f6512d914b51dafed8da9504e7a4a5212e"
+  },
+  "error": "HH700: Artifact for contract \"TrataTechBusinessEventsUpgradeable\" not found. "
+}

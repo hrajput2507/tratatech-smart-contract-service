@@ -1,0 +1,215 @@
+{
+  "info": {
+    "_postman_id": "1757804723994-uvo6eoih5",
+    "name": "TrataTech Ownership Transfer API - Complete Collection",
+    "description": "\n🔄 **TrataTech Ownership Transfer API Testing Collection**\n\nThis collection contains comprehensive API endpoints for testing ownership transfer functionality with gasless transactions.\n\n## 🔗 **Transaction Hashes from Testing:**\n- **createOwnershipDeed**: 0x7632d0e5bf2163429eb48f47f914086a67295d4de35051ad44a9dfca9c44e3bd\\n- **firstTransfer**: 0xd3b70fb516e7158a097dd0ecd5718c08e8bdd8dd5e0728eac25a82f19832530a\\n- **secondTransfer**: 0xd4387d8e7e84d99e76a34b5a95bb6303490c34036370ad01d0729b3e41204bfb\n\n## 🏠 **Ownership Transfer Chain:**\n1. createOwnershipDeed: ✅ success\\n2. firstTransfer: ✅ success\\n3. secondTransfer: ✅ success\n\n## ⚡ **Features:**\n- Complete ownership lifecycle testing\n- Gasless transactions via MinimalForwarder\n- Multi-step ownership transfers\n- Real transaction hash collection\n      ",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "tratatech-ownership-api"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3005",
+      "type": "string"
+    },
+    {
+      "key": "apiKey",
+      "value": "admin-api-key-123",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "🏥 Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      }
+    },
+    {
+      "name": "🏠 Ownership Registry",
+      "item": [
+        {
+          "name": "Create Ownership Deed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"passportId\": 1277,\n  \"ownerAddress\": \"0x1234567890123456789012345678901234567890\",\n  \"purchaseDate\": 1757804723,\n  \"purchasePrice\": \"2000\",\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Product Ownership Deed\",\n      \"description\": \"Digital ownership certificate for premium product\",\n      \"image\": \"https://example.com/ownership-deed.png\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Purchase Type\",\n          \"value\": \"Primary Sale\"\n        },\n        {\n          \"trait_type\": \"Payment Method\",\n          \"value\": \"Cryptocurrency\"\n        },\n        {\n          \"trait_type\": \"Warranty Period\",\n          \"value\": \"3 Years\"\n        },\n        {\n          \"trait_type\": \"Registration Date\",\n          \"value\": \"2025-09-13T23:05:23.994Z\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ownership/deeds",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ownership",
+                "deeds"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Transfer Ownership (Primary → Secondary)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deedId\": 1,\n  \"currentOwnerAddress\": \"0x1234567890123456789012345678901234567890\",\n  \"newOwnerAddress\": \"0x0987654321098765432109876543210987654321\",\n  \"transferPrice\": \"2500\",\n  \"transferType\": \"SECONDARY_SALE\",\n  \"transferReason\": \"Private sale to collector\",\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Ownership Transfer Record - Primary to Secondary\",\n      \"description\": \"Transfer of product ownership from original owner to secondary buyer\",\n      \"image\": \"https://example.com/transfer-certificate.png\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Transfer Type\",\n          \"value\": \"Secondary Sale\"\n        },\n        {\n          \"trait_type\": \"Transfer Price\",\n          \"value\": \"2500 USD\"\n        },\n        {\n          \"trait_type\": \"Price Appreciation\",\n          \"value\": \"25%\"\n        },\n        {\n          \"trait_type\": \"Transfer Date\",\n          \"value\": \"2025-09-13T23:05:23.994Z\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ownership/transfer",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ownership",
+                "transfer"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Transfer Ownership (Secondary → Third Party)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deedId\": 1,\n  \"currentOwnerAddress\": \"0x0987654321098765432109876543210987654321\",\n  \"newOwnerAddress\": \"0xAABBCCDDEEFF00112233445566778899AABBCCDD\",\n  \"transferPrice\": \"3000\",\n  \"transferType\": \"SECONDARY_SALE\",\n  \"transferReason\": \"Investment portfolio addition\",\n  \"ipfsData\": {\n    \"metadata\": {\n      \"name\": \"Ownership Transfer Record - Secondary to Investment\",\n      \"description\": \"Transfer of product ownership to investment collector\",\n      \"image\": \"https://example.com/investment-transfer.png\",\n      \"attributes\": [\n        {\n          \"trait_type\": \"Transfer Type\",\n          \"value\": \"Investment Purchase\"\n        },\n        {\n          \"trait_type\": \"Transfer Price\",\n          \"value\": \"3000 USD\"\n        },\n        {\n          \"trait_type\": \"Total Appreciation\",\n          \"value\": \"50%\"\n        },\n        {\n          \"trait_type\": \"Transfer Date\",\n          \"value\": \"2025-09-13T23:05:23.994Z\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ownership/transfer",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ownership",
+                "transfer"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Ownership History",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ownership/history/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ownership",
+                "history",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Current Owner",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ownership/owner/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ownership",
+                "owner",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Ownership Deed Details",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ownership/deed/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ownership",
+                "deed",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

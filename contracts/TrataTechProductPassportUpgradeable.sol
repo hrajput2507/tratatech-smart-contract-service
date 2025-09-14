@@ -6,6 +6,7 @@ import "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/metatx/ERC2771ContextUpgradeable.sol";
 
 
 /**
@@ -13,12 +14,13 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
  * @dev Upgradeable contract for managing digital product passports, brands, and manufacturing certificates
  * @dev Uses UUPS upgradeable pattern for future upgrades
  */
-contract TrataTechProductPassportUpgradeable is 
-    Initializable, 
-    OwnableUpgradeable, 
-    PausableUpgradeable, 
+contract TrataTechProductPassportUpgradeable is
+    Initializable,
+    OwnableUpgradeable,
+    PausableUpgradeable,
     ReentrancyGuardUpgradeable,
-    UUPSUpgradeable 
+    UUPSUpgradeable,
+    ERC2771ContextUpgradeable
 {
 
 
@@ -113,22 +115,22 @@ contract TrataTechProductPassportUpgradeable is
     // ============ MODIFIERS ============
 
     modifier onlyAuthorizedBrand() {
-        require(authorizedBrands[msg.sender] || owner() == msg.sender, "Not authorized brand");
+        require(authorizedBrands[_msgSender()] || owner() == _msgSender(), "Not authorized brand");
         _;
     }
 
     modifier onlyAuthorizedOperator() {
-        require(authorizedOperators[msg.sender] || owner() == msg.sender, "Not authorized operator");
+        require(authorizedOperators[_msgSender()] || owner() == _msgSender(), "Not authorized operator");
         _;
     }
 
     modifier onlyAuthorizedManufacturer() {
-        require(authorizedManufacturers[msg.sender] || owner() == msg.sender, "Not authorized manufacturer");
+        require(authorizedManufacturers[_msgSender()] || owner() == _msgSender(), "Not authorized manufacturer");
         _;
     }
 
     modifier onlyAuthorizedCertifier() {
-        require(authorizedCertifiers[msg.sender] || owner() == msg.sender, "Not authorized certifier");
+        require(authorizedCertifiers[_msgSender()] || owner() == _msgSender(), "Not authorized certifier");
         _;
     }
 
@@ -150,7 +152,7 @@ contract TrataTechProductPassportUpgradeable is
     // ============ INITIALIZATION ============
 
     /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() {
+    constructor(address trustedForwarder) ERC2771ContextUpgradeable(trustedForwarder) {
         _disableInitializers();
     }
 
@@ -213,11 +215,11 @@ contract TrataTechProductPassportUpgradeable is
         });
 
         // Authorize registrant as brand operator
-        authorizedBrands[msg.sender] = true;
+        authorizedBrands[_msgSender()] = true;
 
         // Fee collection removed
 
-        emit BrandRegistered(brandId, brandName, msg.sender, 0);
+        emit BrandRegistered(brandId, brandName, _msgSender(), 0);
     }
 
     /**
@@ -230,7 +232,7 @@ contract TrataTechProductPassportUpgradeable is
 
         brands[brandId].isVerified = true;
 
-        emit BrandVerified(brandId, msg.sender);
+        emit BrandVerified(brandId, _msgSender());
     }
 
     /**
@@ -243,7 +245,7 @@ contract TrataTechProductPassportUpgradeable is
 
         brands[brandId].isActive = false;
 
-        emit BrandRevoked(brandId, msg.sender, reason);
+        emit BrandRevoked(brandId, _msgSender(), reason);
     }
 
     // ============ PRODUCT PASSPORT MANAGEMENT ============
@@ -347,7 +349,7 @@ contract TrataTechProductPassportUpgradeable is
         productPassports[passportId].isValid = false;
         productPassports[passportId].updatedAt = block.timestamp;
 
-        emit ProductPassportInvalidated(passportId, reason, msg.sender);
+        emit ProductPassportInvalidated(passportId, reason, _msgSender());
     }
 
     // ============ MANUFACTURING CERTIFICATE MANAGEMENT ============
@@ -414,7 +416,7 @@ contract TrataTechProductPassportUpgradeable is
 
         certificates[certificateId].isValid = false;
 
-        emit ManufacturingCertificateInvalidated(certificateId, reason, msg.sender);
+        emit ManufacturingCertificateInvalidated(certificateId, reason, _msgSender());
     }
 
     // ============ ACCESS CONTROL ============
@@ -426,7 +428,7 @@ contract TrataTechProductPassportUpgradeable is
     function authorizeOperator(address operator) external onlyOwner {
         require(operator != address(0), "Invalid operator address");
         authorizedOperators[operator] = true;
-        emit OperatorAuthorized(operator, msg.sender);
+        emit OperatorAuthorized(operator, _msgSender());
     }
 
     /**
@@ -435,7 +437,7 @@ contract TrataTechProductPassportUpgradeable is
      */
     function revokeOperator(address operator) external onlyOwner {
         authorizedOperators[operator] = false;
-        emit OperatorRevoked(operator, msg.sender);
+        emit OperatorRevoked(operator, _msgSender());
     }
 
     /**
@@ -496,7 +498,7 @@ contract TrataTechProductPassportUpgradeable is
      */
     function activateEmergencyStop() external onlyOwner {
         emergencyStop = true;
-        emit EmergencyStopActivated(msg.sender);
+        emit EmergencyStopActivated(_msgSender());
     }
 
     /**
@@ -504,7 +506,7 @@ contract TrataTechProductPassportUpgradeable is
      */
     function deactivateEmergencyStop() external onlyOwner {
         emergencyStop = false;
-        emit EmergencyStopDeactivated(msg.sender);
+        emit EmergencyStopDeactivated(_msgSender());
     }
 
     /**
@@ -654,6 +656,20 @@ contract TrataTechProductPassportUpgradeable is
 
         (bool success, ) = to.call{value: amount}("");
         require(success, "ETH recovery failed");
+    }
+
+    // ============ ERC2771 CONTEXT OVERRIDE FUNCTIONS ============
+
+    function _msgSender() internal view override(ContextUpgradeable, ERC2771ContextUpgradeable) returns (address) {
+        return ERC2771ContextUpgradeable._msgSender();
+    }
+
+    function _msgData() internal view override(ContextUpgradeable, ERC2771ContextUpgradeable) returns (bytes calldata) {
+        return ERC2771ContextUpgradeable._msgData();
+    }
+
+    function _contextSuffixLength() internal view override(ContextUpgradeable, ERC2771ContextUpgradeable) returns (uint256) {
+        return ERC2771ContextUpgradeable._contextSuffixLength();
     }
 
     // Duplicate gap removed
