@@ -1,0 +1,619 @@
+{
+  "info": {
+    "name": "TrataTech - Ownership Transfer API Collection",
+    "description": "Comprehensive API collection for testing ownership transfer functionality in TrataTech secure contracts",
+    "version": "2.0.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000/api"
+    },
+    {
+      "key": "ownershipRegistryAddress",
+      "value": "0xCceCE9Ddd070a0cADa8Db549601E6E3437969abD"
+    },
+    {
+      "key": "testDeedId",
+      "value": "1"
+    },
+    {
+      "key": "testRequestId",
+      "value": "1"
+    },
+    {
+      "key": "ownerAddress",
+      "value": "0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927"
+    },
+    {
+      "key": "recipientAddress",
+      "value": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+    }
+  ],
+  "item": [
+    {
+      "name": "📁 1. Setup & Authorization",
+      "item": [
+        {
+          "name": "Authorize Brand",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/authorize-brand",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "authorize-brand"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"brandAddress\": \"{{ownerAddress}}\",\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Brand authorization successful\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Transaction hash present\", function () {",
+                  "    const jsonData = pm.response.json();",
+                  "    pm.expect(jsonData).to.have.property('transactionHash');",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Check Brand Authorization Status",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/authorized-brands/{{ownerAddress}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "authorized-brands", "{{ownerAddress}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "📁 2. Deed Creation & Management",
+      "item": [
+        {
+          "name": "Create Ownership Deed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/create-deed",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "create-deed"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"passportId\": {{$randomInt}},\n  \"owner\": \"{{ownerAddress}}\",\n  \"acquisitionPrice\": \"0.1\",\n  \"acquisitionMethod\": \"Purchase\",\n  \"ipfsCID\": \"QmOwnershipTest{{$timestamp}}\",\n  \"metadataHash\": \"0x{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\n  \"additionalData\": [\"type\", \"electronics\", \"warranty\", \"2years\"],\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Deed creation successful\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Deed ID returned\", function () {",
+                  "    const jsonData = pm.response.json();",
+                  "    if (jsonData.deedId) {",
+                  "        pm.collectionVariables.set('testDeedId', jsonData.deedId);",
+                  "    }",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Get Deed Details",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/deed/{{testDeedId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "deed", "{{testDeedId}}"]
+            }
+          }
+        },
+        {
+          "name": "Lock Deed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/lock-deed",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "lock-deed"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deedId\": \"{{testDeedId}}\",\n  \"lockDuration\": 3600,\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Unlock Deed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/unlock-deed",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "unlock-deed"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deedId\": \"{{testDeedId}}\",\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "📁 3. Transfer Request Management",
+      "item": [
+        {
+          "name": "Create Transfer Request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/create-transfer-request",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "create-transfer-request"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deedId\": \"{{testDeedId}}\",\n  \"toAddress\": \"{{recipientAddress}}\",\n  \"transferPrice\": \"0.15\",\n  \"transferType\": \"Sale\",\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Transfer request creation successful\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Request ID returned\", function () {",
+                  "    const jsonData = pm.response.json();",
+                  "    if (jsonData.requestId) {",
+                  "        pm.collectionVariables.set('testRequestId', jsonData.requestId);",
+                  "    }",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Get Transfer Request Details",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/transfer-request/{{testRequestId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "transfer-request", "{{testRequestId}}"]
+            }
+          }
+        },
+        {
+          "name": "Get Pending Requests (Paginated - SECURITY FIX)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/pending-requests/{{testDeedId}}?offset=0&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "pending-requests", "{{testDeedId}}"],
+              "query": [
+                {
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Pagination working (Security Fix)\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    const jsonData = pm.response.json();",
+                  "    pm.expect(jsonData).to.have.property('requests');",
+                  "    pm.expect(jsonData.requests.length).to.be.at.most(10);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Approve Transfer Request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/approve-transfer",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "approve-transfer"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"requestId\": \"{{testRequestId}}\",\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Execute Transfer Request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/execute-transfer",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "execute-transfer"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"requestId\": \"{{testRequestId}}\",\n  \"paymentValue\": \"0.15\",\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Reject Transfer Request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/reject-transfer",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "reject-transfer"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"requestId\": \"{{testRequestId}}\",\n  \"reason\": \"Transfer declined by owner\",\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "📁 4. Complete Transfer Workflow",
+      "item": [
+        {
+          "name": "Step 1: Create Deed for Transfer Test",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/create-deed",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "create-deed"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"passportId\": {{$randomInt}},\n  \"owner\": \"{{ownerAddress}}\",\n  \"acquisitionPrice\": \"0.2\",\n  \"acquisitionMethod\": \"Transfer Test\",\n  \"ipfsCID\": \"QmTransferTest{{$timestamp}}\",\n  \"metadataHash\": \"0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\",\n  \"additionalData\": [\"purpose\", \"transfer-test\", \"created\", \"{{$isoTimestamp}}\"],\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Step 2: Create Transfer Request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/create-transfer-request",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "create-transfer-request"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deedId\": \"{{testDeedId}}\",\n  \"toAddress\": \"{{recipientAddress}}\",\n  \"transferPrice\": \"0.25\",\n  \"transferType\": \"Complete Transfer Test\",\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Step 3: Approve Transfer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/approve-transfer",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "approve-transfer"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"requestId\": \"{{testRequestId}}\",\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Step 4: Execute Transfer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/execute-transfer",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "execute-transfer"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"requestId\": \"{{testRequestId}}\",\n  \"paymentValue\": \"0.25\",\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Step 5: Verify New Ownership",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/deed/{{testDeedId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "deed", "{{testDeedId}}"]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Ownership transfer completed\", function () {",
+                  "    const jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.owner.toLowerCase()).to.equal(pm.collectionVariables.get('recipientAddress').toLowerCase());",
+                  "    pm.expect(jsonData.previousOwner.toLowerCase()).to.equal(pm.collectionVariables.get('ownerAddress').toLowerCase());",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "📁 5. Query & Analytics",
+      "item": [
+        {
+          "name": "Get Owner's Deeds",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/owner-deeds/{{ownerAddress}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "owner-deeds", "{{ownerAddress}}"]
+            }
+          }
+        },
+        {
+          "name": "Get Deed Transfer History",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/transfer-history/{{testDeedId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "transfer-history", "{{testDeedId}}"]
+            }
+          }
+        },
+        {
+          "name": "Get All Transfer Requests (Admin)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/all-transfer-requests?status=pending&limit=20&offset=0",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "all-transfer-requests"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "pending"
+                },
+                {
+                  "key": "limit",
+                  "value": "20"
+                },
+                {
+                  "key": "offset",
+                  "value": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Contract Statistics",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/statistics",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "statistics"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "📁 6. Security Tests",
+      "item": [
+        {
+          "name": "Test Pagination DoS Prevention",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/pending-requests/{{testDeedId}}?offset=0&limit=1000",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "pending-requests", "{{testDeedId}}"],
+              "query": [
+                {
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "key": "limit",
+                  "value": "1000"
+                }
+              ]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Limit enforcement (Security)\", function () {",
+                  "    const jsonData = pm.response.json();",
+                  "    // Should enforce maximum limit or return error",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200, 400]);",
+                  "    if (pm.response.code === 200) {",
+                  "        pm.expect(jsonData.requests.length).to.be.at.most(100);",
+                  "    }",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Test Invalid Deed Access",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ownership/deed/99999",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "deed", "99999"]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Invalid deed handled properly\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([404, 400]);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Test Zero Address Protection",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ownership/create-transfer-request",
+              "host": ["{{baseUrl}}"],
+              "path": ["ownership", "create-transfer-request"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deedId\": \"{{testDeedId}}\",\n  \"toAddress\": \"0x0000000000000000000000000000000000000000\",\n  \"transferPrice\": \"0.1\",\n  \"transferType\": \"Invalid Transfer\",\n  \"contractAddress\": \"{{ownershipRegistryAddress}}\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Zero address rejected\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([400, 422]);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

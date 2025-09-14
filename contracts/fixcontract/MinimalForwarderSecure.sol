@@ -194,7 +194,7 @@ contract MinimalForwarderSecure is EIP712 {
             _failedExecutions[req.from] = 0;
         }
 
-        emit MetaTransactionExecuted(req.from, req.to, keccak256(req.data), success, gasUsed);
+        emit MetaTransactionExecuted(req.from, req.to, abi.encodePacked(keccak256(req.data)), success, gasUsed);
 
         _executing = false;
         return (success, returndata);

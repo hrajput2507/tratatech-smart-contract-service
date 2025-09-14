@@ -1,0 +1,19 @@
+{
+  "network": "Polygon Amoy Testnet",
+  "chainId": 80002,
+  "deployer": "0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927",
+  "timestamp": "2025-09-14T05:28:10.041Z",
+  "contracts": {
+    "minimalForwarderSecure": "0x197267Cdcd1032710B27EcaddE2f82814cEE23CD",
+    "mainSecure": "0x1D4D7590d9a448533316730C567A8Ec43710C5ae",
+    "productPassportSecure": "0x16C75E6E43c621a38DE358d37146e1146d9fBFaC",
+    "provenanceSecure": "0xcc5A04641E4c76CF6e67c68E6BcF759De6C0Fc11",
+    "ownershipSecure": "0xCceCE9Ddd070a0cADa8Db549601E6E3437969abD"
+  },
+  "transactions": {
+    "minimalForwarderSecure": "0x0325abb5a5db2238a96d73a6ea91ec68026218fa7c06a7fd5e786a549ab324f4"
+  },
+  "gasUsed": {
+    "minimalForwarderSecure": "1334023"
+  }
+}
