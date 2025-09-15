@@ -17,6 +17,7 @@ import {
 
 // Import services
 import blockchainService from "../services/blockchainService";
+import { ipfsService } from "../services/ipfsService";
 
 // Import middleware
 import {
@@ -207,33 +208,10 @@ router.get(
     try {
       const deedData = await blockchainService.getOwnershipDeed(deedId);
 
-      // Convert BigInt values to strings and structure the response
-      const [
-        passportId,
-        owner,
-        acquisitionDate,
-        acquisitionPrice,
-        _acquisitionMethod,
-        _ipfsCID,
-        _tokenId,
-        _isValid,
-        isLocked,
-      ] = deedData;
-
       const response: ApiResponse<OwnershipDeedData> = {
         success: true,
         message: "Ownership deed details retrieved successfully",
-        data: {
-          deedId,
-          ownerAddress: owner,
-          passportId: passportId.toString(),
-          purchaseDate: acquisitionDate.toString(),
-          creationDate: acquisitionDate.toString(),
-          purchasePrice: acquisitionPrice.toString(),
-          ipfsCID: _ipfsCID || "",
-          isLocked,
-          tokenId: deedId, // Assuming deedId is used as tokenId if not available separately
-        },
+        data: { ...deedData },
       };
 
       res.json(response);
@@ -361,6 +339,155 @@ router.post(
     } catch (error) {
       throw new BlockchainError(
         `Failed to create transfer request: ${
+          error instanceof Error ? error.message : "Unknown error"
+        }`
+      );
+    }
+  })
+);
+
+/**
+ * @swagger
+ * /api/v1/ownership/deeds/{deedId}/direct-transfer:
+ *   post:
+ *     summary: Direct ownership transfer (requires current owner's private key)
+ *     tags: [Ownership]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: deedId
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: Ownership deed ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - newOwner
+ *               - transferPrice
+ *               - transferType
+ *             properties:
+ *               newOwner:
+ *                 type: string
+ *                 description: New owner's Ethereum address
+ *               transferPrice:
+ *                 type: string
+ *                 description: Transfer price in wei
+ *               transferType:
+ *                 type: integer
+ *                 description: Transfer type (0=PRIMARY_SALE, 1=SECONDARY_SALE, 2=GIFT)
+ *               ipfsCID:
+ *                 type: string
+ *                 description: IPFS CID for transfer metadata
+ *     responses:
+ *       200:
+ *         description: Ownership transferred successfully
+ *       401:
+ *         description: Unauthorized
+ *       403:
+ *         description: Forbidden - not the current owner
+ *       404:
+ *         description: Ownership deed not found
+ *       500:
+ *         description: Server error
+ */
+router.post(
+  "/deeds/:deedId/direct-transfer",
+  [
+    param("deedId").isInt({ min: 1 }).withMessage("Valid deed ID is required"),
+    body("newOwner")
+      .isEthereumAddress()
+      .withMessage("Valid Ethereum address is required"),
+    body("transferPrice")
+      .isString()
+      .notEmpty()
+      .withMessage("Transfer price is required"),
+    body("transferType")
+      .isInt({ min: 0, max: 2 })
+      .withMessage(
+        "Valid transfer type is required (0=PRIMARY_SALE, 1=SECONDARY_SALE, 2=GIFT)"
+      ),
+    body("ipfsData")
+      .optional()
+      .isObject()
+      .withMessage("IPFS data must be an object"),
+    body("ipfsData.metadata")
+      .optional()
+      .isObject()
+      .withMessage("IPFS metadata must be an object"),
+    requireRole(["admin", "operator", "owner"]),
+    rateLimitByUser(5 * 60 * 1000, 3), // 5 minutes, 3 requests
+  ],
+  asyncHandler(async (req: AuthenticatedRequest, res: Response) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw new ValidationError("Validation failed", errors.array());
+    }
+
+    const deedId = parseInt(req.params["deedId"] || "0");
+    const { newOwner, transferPrice, transferType, ipfsData } = req.body;
+
+    try {
+      // Handle IPFS data - use provided CID or upload metadata
+      let finalIpfsCID = ipfsData?.cid;
+      if (!finalIpfsCID && ipfsData?.metadata) {
+        // Upload metadata to IPFS
+        const result = await ipfsService.uploadMetadata(ipfsData.metadata);
+        finalIpfsCID = result.hash;
+      } else if (!finalIpfsCID) {
+        // Generate default IPFS CID
+        finalIpfsCID = `QmDirectTransfer${Date.now()}`;
+      }
+
+      // Verify current owner before transfer
+      const currentOwner = await blockchainService.getDeedOwner(deedId);
+      console.log(`Current owner of deed ${deedId}: ${currentOwner}`);
+
+      // Execute direct transfer
+      const receipt = await blockchainService.transferOwnershipDeed(
+        deedId,
+        newOwner,
+        transferPrice,
+        transferType,
+        finalIpfsCID
+      );
+
+      // Verify transfer was successful
+      const newOwnerAfterTransfer = await blockchainService.getDeedOwner(
+        deedId
+      );
+
+      if (newOwnerAfterTransfer.toLowerCase() !== newOwner.toLowerCase()) {
+        throw new Error(
+          "Transfer verification failed - ownership did not change"
+        );
+      }
+
+      const response: ApiResponse<TransactionResponse> = {
+        success: true,
+        message: "Ownership transferred successfully",
+        data: {
+          transactionHash: receipt.hash,
+          deedId,
+          previousOwner: currentOwner,
+          newOwner,
+          transferPrice,
+          transferType,
+          ipfsCID: finalIpfsCID,
+          blockNumber: receipt.blockNumber,
+          gasUsed: receipt.gasUsed?.toString() || "0",
+        },
+      };
+
+      res.json(response);
+    } catch (error) {
+      throw new BlockchainError(
+        `Failed to transfer ownership: ${
           error instanceof Error ? error.message : "Unknown error"
         }`
       );

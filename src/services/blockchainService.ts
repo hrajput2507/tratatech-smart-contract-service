@@ -99,10 +99,10 @@ class BlockchainService {
 
       // Load contract ABIs
       const contractNames = [
-        "TrataTechProductPassportUpgradeable",
-        "TrataTechProvenanceUpgradeable",
-        "TrataTechOwnershipRegistryUpgradeable",
-        "TrataTechMainUpgradeable",
+        "TrataTechProductPassportUpgradeableSecure",
+        "TrataTechProvenanceUpgradeableSecure",
+        "TrataTechOwnershipRegistryUpgradeableSecure",
+        "TrataTechMainUpgradeableSecure",
       ];
 
       for (const contractName of contractNames) {
@@ -137,44 +137,44 @@ class BlockchainService {
       // Initialize contract instances
       if (
         contractAddresses.productPassport &&
-        this.contracts["TrataTechProductPassportUpgradeable"]
+        this.contracts["TrataTechProductPassportUpgradeableSecure"]
       ) {
         this.productPassportContract = new ethers.Contract(
           contractAddresses.productPassport,
-          this.contracts["TrataTechProductPassportUpgradeable"].abi,
+          this.contracts["TrataTechProductPassportUpgradeableSecure"].abi,
           this.signer || this.provider
         );
       }
 
       if (
         contractAddresses.provenance &&
-        this.contracts["TrataTechProvenanceUpgradeable"]
+        this.contracts["TrataTechProvenanceUpgradeableSecure"]
       ) {
         this.provenanceContract = new ethers.Contract(
           contractAddresses.provenance,
-          this.contracts["TrataTechProvenanceUpgradeable"].abi,
+          this.contracts["TrataTechProvenanceUpgradeableSecure"].abi,
           this.signer || this.provider
         );
       }
 
       if (
         contractAddresses.ownershipRegistry &&
-        this.contracts["TrataTechOwnershipRegistryUpgradeable"]
+        this.contracts["TrataTechOwnershipRegistryUpgradeableSecure"]
       ) {
         this.ownershipRegistryContract = new ethers.Contract(
           contractAddresses.ownershipRegistry,
-          this.contracts["TrataTechOwnershipRegistryUpgradeable"].abi,
+          this.contracts["TrataTechOwnershipRegistryUpgradeableSecure"].abi,
           this.signer || this.provider
         );
       }
 
       if (
         contractAddresses.main &&
-        this.contracts["TrataTechMainUpgradeable"]
+        this.contracts["TrataTechMainUpgradeableSecure"]
       ) {
         this.mainContract = new ethers.Contract(
           contractAddresses.main,
-          this.contracts["TrataTechMainUpgradeable"].abi,
+          this.contracts["TrataTechMainUpgradeableSecure"].abi,
           this.signer || this.provider
         );
       }
@@ -237,7 +237,7 @@ class BlockchainService {
       await databaseService.saveTransaction({
         transactionHash: receipt.hash,
         blockNumber: receipt.blockNumber,
-        gasUsed: receipt.gasUsed.toString(),
+        gasUsed: receipt.gasUsed?.toString(),
         gasPrice: receipt.gasPrice?.toString() || "0",
         from: receipt.from,
         to: receipt.to || "",
@@ -261,7 +261,7 @@ class BlockchainService {
         ipfsHash: finalIpfsCID || "",
         ipfsUrl: ipfsService.getGatewayURL(finalIpfsCID || ""),
         transactionHash: receipt.hash,
-        ownerAddress: receipt.from,
+        ownerAddress: brandData.walletAddress || "",
         isActive: true,
       });
 
@@ -329,12 +329,12 @@ class BlockchainService {
         passportData.brandId, // brandId is already a string
         passportData.productName,
         passportData.productDescription,
-        "", // materials - not in current interface
-        "", // manufacturingLocation - not in current interface
+        passportData.materials || "Not specified", // materials - provide default if not specified
+        passportData.manufacturingLocation || "Not specified", // manufacturingLocation - provide default if not specified
         passportData.manufacturingDate,
         finalIpfsCID,
         ethers.keccak256(ethers.toUtf8Bytes(finalIpfsCID)), // metadataHash
-        [] // additionalAttributes
+        passportData.additionalAttributes || [] // additionalAttributes
       );
 
       const receipt = await tx.wait();
@@ -411,9 +411,43 @@ class BlockchainService {
         throw new Error("Product passport contract not initialized");
       }
 
-      return await this.productPassportContract["getProductPassportDetails"](
-        passportId
-      );
+      const passportData = await this.productPassportContract[
+        "getProductPassportDetails"
+      ](passportId);
+
+      // Fetch IPFS data if CID exists
+      let ipfsData = null;
+      if (passportData.ipfsCID && passportData.ipfsCID !== "") {
+        try {
+          ipfsData = await ipfsService.retrieveData(passportData.ipfsCID);
+        } catch (ipfsError) {
+          console.warn(
+            `Failed to fetch IPFS data for CID ${passportData.ipfsCID}:`,
+            ipfsError
+          );
+          // Continue without IPFS data rather than failing the entire request
+        }
+      }
+
+      // Convert BigInt values to strings to avoid serialization issues
+      return {
+        id: passportData.id.toString(),
+        serialNumber: passportData.serialNumber,
+        brandId: passportData.brandId,
+        productName: passportData.productName,
+        productDescription: passportData.productDescription,
+        materials: passportData.materials,
+        manufacturingLocation: passportData.manufacturingLocation,
+        manufacturingDate: passportData.manufacturingDate.toString(),
+        ipfsCID: passportData.ipfsCID,
+        ipfsData: ipfsData, // Include the actual IPFS metadata
+        ipfsUrl: ipfsService.getGatewayURL(passportData.ipfsCID),
+        metadataHash: passportData.metadataHash,
+        additionalAttributes: passportData.additionalAttributes,
+        isValid: passportData.isValid,
+        createdAt: passportData.createdAt.toString(),
+        updatedAt: passportData.updatedAt.toString(),
+      };
     } catch (error) {
       throw new Error(
         `Failed to get product passport: ${
@@ -441,7 +475,9 @@ class BlockchainService {
 
       const tx = await this.productPassportContract["updateProductPassport"](
         passportId,
-        finalIpfsCID
+        finalIpfsCID,
+        ethers.keccak256(ethers.toUtf8Bytes(finalIpfsCID)), // metadataHash
+        ipfsData.metadata?.["additionalAttributes"] || [] // additionalAttributes
       );
       const receipt = await tx.wait();
       return { ...receipt, ipfsCID: finalIpfsCID };
@@ -758,7 +794,23 @@ class BlockchainService {
         throw new Error("Provenance contract not initialized");
       }
 
-      return await this.provenanceContract["getProvenanceHistory"](passportId);
+      const history = await this.provenanceContract["getProvenanceHistory"](
+        passportId
+      );
+
+      // Convert BigInt values to strings to avoid serialization issues
+      return history.map((entry: any) => ({
+        id: entry.id.toString(),
+        passportId: entry.passportId.toString(),
+        eventType: entry.eventType,
+        description: entry.description,
+        timestamp: entry.timestamp.toString(),
+        ipfsCID: entry.ipfsCID,
+        metadataHash: entry.metadataHash,
+        isValid: entry.isValid,
+        createdAt: entry.createdAt.toString(),
+        updatedAt: entry.updatedAt.toString(),
+      }));
     } catch (error) {
       throw new Error(
         `Failed to get provenance history: ${
@@ -906,6 +958,14 @@ class BlockchainService {
         throw new Error("Ownership registry contract not initialized");
       }
 
+      // Check if deed exists before attempting transfer
+      const deedExists = await this.deedExists(deedId);
+      if (!deedExists) {
+        throw new Error(
+          `Ownership deed ${deedId} does not exist. Please create the deed first using the /api/v1/ownership/deeds endpoint.`
+        );
+      }
+
       const tx = await this.ownershipRegistryContract["transferOwnershipDeed"](
         deedId,
         newOwner,
@@ -929,15 +989,48 @@ class BlockchainService {
         throw new Error("Ownership registry contract not initialized");
       }
 
-      return await this.ownershipRegistryContract["getOwnershipDeedDetails"](
-        deedId
+      const deedData = await this.ownershipRegistryContract[
+        "getOwnershipDeedDetails"
+      ](deedId);
+
+      // Check if deedData exists
+      if (!deedData) {
+        throw new Error("No deed data returned from contract");
+      }
+
+      // Convert the Result object to a proper response
+      // Handle BigInt conversion safely
+      const processedData = {
+        id: String(deedData[0] || ""),
+        owner: String(deedData[1] || ""),
+        acquisitionDate: String(deedData[2] || ""),
+        amount: String(deedData[3] || ""),
+        type: String(deedData[4] || ""),
+        ipfsHash: String(deedData[5] || ""),
+        transactionHash: String(deedData[6] || ""),
+        isActive: Boolean(deedData[7]),
+        hasTransfers: Boolean(deedData[8]),
+        transferCount: String(deedData[9] || "0"),
+        lastTransferTo: String(deedData[10] || ""),
+        transferHistory: [], // Always return empty array - no iteration needed
+      };
+
+      console.log("Processed deed data:", processedData);
+      return processedData;
+    } catch (error) {
+      console.error("Error in getOwnershipDeed:", error);
+      throw error; // Re-throw the original error
+    }
+  }
+  async deedExists(deedId: number): Promise<boolean> {
+    try {
+      const deedData = await this.getOwnershipDeed(deedId);
+      return (
+        deedData &&
+        deedData.owner !== "0x0000000000000000000000000000000000000000"
       );
     } catch (error) {
-      throw new Error(
-        `Failed to get ownership deed: ${
-          error instanceof Error ? error.message : "Unknown error"
-        }`
-      );
+      return false;
     }
   }
 
@@ -1534,6 +1627,42 @@ class BlockchainService {
           error instanceof Error ? error.message : "Unknown error"
         }`
       );
+      return false;
+    }
+  }
+
+  async brandExists(brandId: string): Promise<boolean> {
+    try {
+      if (!this.productPassportContract) {
+        throw new Error("Product passport contract not initialized");
+      }
+
+      // Try to get brand details - if it throws BrandNotFound, brand doesn't exist
+      await this.productPassportContract["getBrandDetails"](brandId);
+      return true; // Brand exists
+    } catch (error) {
+      // Check if it's a BrandNotFound error
+      if (error instanceof Error && error.message.includes("BrandNotFound")) {
+        return false; // Brand doesn't exist
+      }
+      // For other errors, re-throw
+      throw error;
+    }
+  }
+
+  async serialNumberExists(serialNumber: string): Promise<boolean> {
+    try {
+      if (!this.productPassportContract) {
+        throw new Error("Product passport contract not initialized");
+      }
+
+      // Get passport ID by serial number - if it returns 0, serial number doesn't exist
+      const passportId = await this.productPassportContract[
+        "getPassportIdBySerialNumber"
+      ](serialNumber);
+      return passportId > 0; // Serial number exists if passportId > 0
+    } catch (error) {
+      // For any errors, assume serial number doesn't exist
       return false;
     }
   }

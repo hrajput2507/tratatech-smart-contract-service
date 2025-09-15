@@ -1,0 +1,707 @@
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:16:53.175Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:16:53.178Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:16:53.179Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:16:53.179Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:17:04 +0000] \"POST /api/v1/product-passport/brands HTTP/1.1\" 400 272 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:17:04.998Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:18:32.448Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:18:33.907Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:18:33.908Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:18:33.908Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:18:33.908Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:18:36.885Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:18:38.539Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:18:38.541Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:18:38.541Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:18:38.541Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:18:41.406Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:18:42.922Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:18:42.925Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:18:42.926Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:18:42.926Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:18:45.886Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:18:47.476Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:18:47.478Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:18:47.478Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:18:47.479Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:18:50.195Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:18:52.154Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:18:52.156Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:18:52.156Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:18:52.157Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:19:32.394Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:19:40.561Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:19:42.235Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:19:42.236Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:19:42.236Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:19:42.237Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:19:42.240Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:19:54.063Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:19:57.384Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:19:57.387Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:19:57.387Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:19:57.387Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:20:14 +0000] \"POST /api/v1/product-passport/brands HTTP/1.1\" 400 336 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:20:14.289Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:20:52.476Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:20:54.221Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:20:54.223Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:20:54.223Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:20:54.223Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:21:32 +0000] \"POST /api/v1/product-passport/brands HTTP/1.1\" 201 683 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:21:32.826Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:22:41.509Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:22:42.949Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:22:42.952Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:22:42.952Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:22:42.952Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:22:49.299Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:22:50.951Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:22:50.954Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:22:50.954Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:22:50.955Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:22:55.455Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:22:56.961Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:22:56.964Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:22:56.964Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:22:56.964Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:23:26 +0000] \"GET /api/v1/product-passport/brands/sample-brand HTTP/1.1\" 200 540 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:23:26.988Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:23:36 +0000] \"GET /api/v1/product-passport/brands/rolerxd HTTP/1.1\" 200 525 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:23:36.109Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:24:01 +0000] \"GET /api/v1/product-passport/brands/status/0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927 HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:24:01.143Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:24:19 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 - \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:24:19.294Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:24:45 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 - \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:24:45.628Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:24:57.037Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:25:02.320Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:25:02.323Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:25:02.323Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:25:02.323Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:25:08.920Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:25:08.922Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:25:08.923Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:25:08.923Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:25:10 +0000] \"POST /api/v1/product-passport/brands HTTP/1.1\" 400 242 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T10:25:10.656Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:25:19 +0000] \"POST /api/v1/product-passport/brands HTTP/1.1\" 400 243 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:25:19.403Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:25:37.953Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:25:39.622Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:25:39.625Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:25:39.625Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:25:39.625Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:26:14.310Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:26:16.106Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:26:16.108Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:26:16.108Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:26:16.108Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:27:28 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 201 543 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T10:27:28.184Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:27:50 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 - \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:27:50.028Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:28:48 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 - \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:28:48.291Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:29:08 +0000] \"POST /api/v1/api/v1/product-passport/passports HTTP/1.1\" 404 361 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:29:08.079Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:29:26 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 201 711 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:29:26.449Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:29:38 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 - \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:29:38.611Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:30:29 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 2866 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T10:30:29.111Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:30:48.393Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:30:50.182Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:30:50.184Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:30:50.184Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:30:50.184Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:31:07.444Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:31:08.931Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:31:08.933Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:31:08.933Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:31:08.933Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:31:43 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 263 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:31:43.590Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:31:58.131Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:31:59.585Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:32:01.248Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:32:01.249Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:32:01.249Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:32:01.250Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:32:56 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 263 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T10:32:56.449Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:33:18 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 201 711 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T10:33:18.485Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:33:35.342Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:33:36.606Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:33:36.607Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:33:36.607Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:33:36.607Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:33:48.838Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:33:50.581Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:33:50.583Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:33:50.583Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:33:50.584Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:33:57.533Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:33:59.203Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:33:59.205Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:33:59.205Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:33:59.205Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:38:18 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 201 739 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T10:38:18.651Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:38:33.363Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:38:35.027Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:38:35.030Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:38:35.030Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:38:35.030Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:38:56 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 351 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:38:56.443Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:39:08 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 351 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:39:08.715Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:39:16 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 400 351 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:39:16.590Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:39:25.299Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:39:27.086Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:39:27.091Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:39:27.092Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:39:27.094Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:39:30.470Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:39:32.189Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:39:32.190Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:39:32.191Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:39:32.191Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:39:32.419Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:39:34.133Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:39:34.134Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:39:34.134Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:39:34.135Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:39:48 +0000] \"POST /api/v1/product-passport/passports HTTP/1.1\" 201 712 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:39:48.655Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:40:00 +0000] \"GET /api/v1/product-passport/passports/8 HTTP/1.1\" 400 239 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:40:00.034Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:40:09.425Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:40:11.247Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:40:11.249Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:40:11.249Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:40:11.250Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:40:35.392Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:40:36.981Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:40:36.983Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:40:36.983Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:40:36.983Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:42:14 +0000] \"GET /api/v1/product-passport/passports/1 HTTP/1.1\" 200 569 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T10:42:14.417Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:42:20 +0000] \"GET /api/v1/product-passport/passports/2 HTTP/1.1\" 200 624 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T10:42:20.260Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:42:32.798Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:42:34.057Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:42:34.058Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:42:34.059Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:42:34.059Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:42:53.325Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:42:55.003Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:42:55.005Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:42:55.005Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:42:55.005Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:43:00 +0000] \"GET /api/v1/product-passport/passports/1 HTTP/1.1\" 200 569 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T10:43:00.100Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:43:08 +0000] \"GET /api/v1/product-passport/passports/3 HTTP/1.1\" 200 624 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T10:43:08.957Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:43:17.008Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:43:18.701Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:43:18.704Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:43:18.704Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:43:18.704Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:43:51 +0000] \"GET /api/v1/product-passport/passports/8 HTTP/1.1\" 200 625 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:43:51.629Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T10:44:59.649Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T10:45:01.182Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T10:45:01.184Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T10:45:01.184Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T10:45:01.185Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:10:45:21 +0000] \"GET /api/v1/product-passport/passports/8 HTTP/1.1\" 200 747 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T10:45:21.529Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:11:18:33 +0000] \"GET /api/v1/product-passport/passports/8 HTTP/1.1\" 200 747 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T11:18:33.824Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:11:20:03 +0000] \"GET /api/v1/product-passport/passports/1 HTTP/1.1\" 200 691 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T11:20:03.340Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T11:20:04.261Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T11:20:06.087Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T11:20:06.090Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T11:20:06.090Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T11:20:06.091Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T11:20:59.475Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T11:21:01.205Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T11:21:01.207Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T11:21:01.207Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T11:21:01.207Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:11:55:25 +0000] \"GET /api/v1/product-passport/passports/8 HTTP/1.1\" 200 1262 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T11:55:25.050Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T11:55:25.445Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T11:55:27.196Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T11:55:27.198Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T11:55:27.198Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T11:55:27.198Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:11:55:51 +0000] \"GET /api/v1/product-passport/passports/8 HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T11:55:51.251Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:11:57:19 +0000] \"PUT /api/v1/product-passport/passports/8 HTTP/1.1\" 400 456 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T11:57:19.105Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T11:58:27.753Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T11:58:29.292Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T11:58:29.293Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T11:58:29.293Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T11:58:29.293Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:11:58:47 +0000] \"PUT /api/v1/product-passport/passports/8 HTTP/1.1\" 200 249 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T11:58:47.574Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:11:59:03 +0000] \"GET /api/v1/product-passport/passports/8 HTTP/1.1\" 200 876 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T11:59:03.961Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T11:59:23.460Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T11:59:25.344Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T11:59:25.346Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T11:59:25.346Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T11:59:25.347Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:11:59:36 +0000] \"PUT /api/v1/product-passport/passports/8 HTTP/1.1\" 200 249 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T11:59:36.008Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:12:02:40 +0000] \"POST /api/v1/product-passport/certificates HTTP/1.1\" 201 493 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T12:02:40.673Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:12:03:30 +0000] \"GET /api/v1/product-passport/certificates/1 HTTP/1.1\" 200 310 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T12:03:30.858Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:12:04:18 +0000] \"GET /api/v1/product-passport/fees HTTP/1.1\" 200 224 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T12:04:18.303Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:12:05:33 +0000] \"POST /api/v1/ownership/deeds HTTP/1.1\" 201 488 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T12:05:33.442Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:12:06:14 +0000] \"POST /api/v1/ownership/deeds/1/transfer HTTP/1.1\" 400 388 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T12:06:14.749Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T12:33:47.715Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T12:33:49.734Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T12:33:49.737Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T12:33:49.738Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T12:33:49.738Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:12:34:46 +0000] \"POST /api/v1/ownership/deeds/2/transfer HTTP/1.1\" 200 456 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T12:34:46.499Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:12:35:47 +0000] \"POST /api/v1/ownership/transfer-requests/2/approve HTTP/1.1\" 200 110 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T12:35:47.649Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:12:35:56 +0000] \"POST /api/v1/ownership/transfer-requests/2/execute HTTP/1.1\" 200 110 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T12:35:56.612Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T12:49:24.287Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T12:49:26.329Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T12:49:26.331Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T12:49:26.331Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T12:49:26.331Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:12:54:00 +0000] \"POST /api/v1/ownership/transfer-requests/2/approve HTTP/1.1\" 200 110 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T12:54:00.438Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:12:54:05 +0000] \"POST /api/v1/ownership/transfer-requests/2/execute HTTP/1.1\" 200 110 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T12:54:05.587Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:03:02.304Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:03:04.674Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:03:04.677Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:03:04.677Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:03:04.678Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:05:17 +0000] \"POST /api/v1/ownership/deeds/1/direct-transfer HTTP/1.1\" 400 278 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:05:17.270Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:06:49.940Z"}
+{"level":"error","message":"Failed to initialize blockchain service: IPFS connection failed","service":"tratatech-api","stack":"Error: IPFS connection failed\n    at IPFSService.connect (/Users/himanshu/Downloads/tratatech-smart-contract/src/services/ipfsService.ts:47:13)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at BlockchainService.initialize (/Users/himanshu/Downloads/tratatech-smart-contract/src/services/blockchainService.ts:69:7)\n    at initializeBlockchain (/Users/himanshu/Downloads/tratatech-smart-contract/src/server.ts:202:5)\n    at startServer (/Users/himanshu/Downloads/tratatech-smart-contract/src/server.ts:212:3)","timestamp":"2025-09-15T20:07:29.298Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:19:33.070Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:19:33.072Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:19:33.072Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:19:33.072Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:19:41.816Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:19:43.717Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:19:43.720Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:19:43.720Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:19:43.720Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:19:48.831Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:19:50.693Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:19:50.695Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:19:50.695Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:19:50.695Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:20:34 +0000] \"POST /api/v1/ownership/deeds/1/direct-transfer HTTP/1.1\" 400 268 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:20:34.338Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:20:57 +0000] \"POST /api/v1/ownership/deeds/1/direct-transfer HTTP/1.1\" 400 268 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:20:57.683Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:21:07.935Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:21:10.118Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:21:10.121Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:21:10.121Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:21:10.121Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:21:12.299Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:21:14.179Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:21:14.181Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:21:14.182Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:21:14.182Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:21:24 +0000] \"POST /api/v1/ownership/deeds/1/direct-transfer HTTP/1.1\" 400 1140 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:21:24.967Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:21:33 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 275 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:21:33.854Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:22:02 +0000] \"POST /api/v1/ownership/deeds/8/direct-transfer HTTP/1.1\" 400 - \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:22:02.546Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:22:25.787Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:22:27.983Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:22:27.984Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:22:27.984Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:22:27.984Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:24:11.931Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:24:14.091Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:24:14.093Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:24:14.093Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:24:14.093Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:27:38.509Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:27:40.701Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:27:40.703Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:27:40.703Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:27:40.704Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:27:55.695Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:27:57.778Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:27:57.780Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:27:57.780Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:27:57.780Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:29:14.663Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:29:16.795Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:29:16.797Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:29:16.797Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:29:16.797Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:29:36.975Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:29:39.168Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:29:39.170Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:29:39.170Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:29:39.170Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:29:39.697Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:29:41.715Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:29:41.716Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:29:41.717Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:29:41.717Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:29:42.950Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:29:44.920Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:29:44.923Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:29:44.923Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:29:44.924Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:30:19 +0000] \"POST /api/v1/ownership/deeds/8/direct-transfer HTTP/1.1\" 400 346 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:30:19.196Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:31:11 +0000] \"POST /api/v1/ownership/deeds/2/direct-transfer HTTP/1.1\" 400 346 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:31:11.780Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:31:31 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 275 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:31:31.762Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:31:51.241Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:31:52.460Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:31:54.430Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:31:54.433Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:31:54.433Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:31:54.433Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:32:48.774Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:32:51.093Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:32:51.096Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:32:51.096Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:32:51.096Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:32:53 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 270 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:32:53.845Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:32:57.474Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:32:59.548Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:32:59.550Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:32:59.550Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:32:59.550Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:33:42.210Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:33:44.405Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:33:44.407Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:33:44.408Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:33:44.408Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:34:05.384Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:34:07.434Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:34:07.435Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:34:07.435Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:34:07.435Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:34:26 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 213 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:34:26.863Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:34:37 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 213 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:34:37.049Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:34:50.066Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:34:52.332Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:34:52.334Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:34:52.334Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:34:52.334Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:35:00 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 213 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:35:00.859Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:35:08.889Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:35:11.093Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:35:11.094Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:35:11.094Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:35:11.095Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:35:16 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 213 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:35:16.707Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:36:00.481Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:36:02.788Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:36:02.790Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:36:02.791Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:36:02.791Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:36:06 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 213 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:36:06.400Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:36:25.299Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:36:27.453Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:36:27.455Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:36:27.455Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:36:27.455Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:36:30 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 226 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:36:30.932Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:36:46.895Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:36:49.080Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:36:49.083Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:36:49.083Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:36:49.084Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:36:51 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 226 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:36:51.843Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:36:59.057Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:37:01.123Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:37:01.125Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:37:01.125Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:37:01.125Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:37:03 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 226 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:37:03.225Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:37:10.784Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:37:12.987Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:37:12.988Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:37:12.988Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:37:12.988Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:37:14 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 226 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:37:14.748Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:37:26.083Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:37:28.153Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:37:28.156Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:37:28.156Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:37:28.156Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:37:30 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 226 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:37:30.186Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:37:37.491Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:37:39.436Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:37:39.437Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:37:39.437Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:37:39.437Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:37:44 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 200 224 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:37:44.051Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:38:02 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 200 224 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:38:02.029Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:38:06 +0000] \"GET /api/v1/ownership/deeds/2 HTTP/1.1\" 200 282 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:38:06.425Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:38:14 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 200 224 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:38:14.408Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:38:24.754Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:38:27.140Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:38:27.142Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:38:27.142Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:38:27.142Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:38:50.160Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:38:52.223Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:38:52.226Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:38:52.226Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:38:52.226Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:38:56.557Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:38:58.490Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:38:58.492Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:38:58.492Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:38:58.492Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:39:04 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 200 224 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:39:04.601Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:39:21.458Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:39:23.751Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:39:23.753Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:39:23.754Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:39:23.754Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:39:44 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 200 224 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:39:44.638Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:39:50.860Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:39:53.083Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:39:53.084Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:39:53.085Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:39:53.085Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:39:56 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 200 224 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:39:56.983Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:40:05.040Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:40:18.686Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:40:21.025Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:40:21.028Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:40:21.028Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:40:21.028Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:40:46.105Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:40:48.846Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:40:48.850Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:40:48.850Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:40:48.851Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:41:59 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 270 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T20:41:59.496Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:41:59.505Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:42:02.334Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:42:02.337Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:42:02.337Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:42:02.337Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:43:41 +0000] \"GET /api/v1/ownership/deeds/1 HTTP/1.1\" 400 270 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:43:41.810Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:43:41.836Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:43:44.628Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:43:44.632Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:43:44.632Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:43:44.632Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:43:57.904Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:44:00.343Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:44:00.348Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:44:00.348Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:44:00.348Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:44:24 +0000] \"POST /api/v1/ownership/deeds HTTP/1.1\" 201 488 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:44:24.554Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:44:34 +0000] \"GET /api/v1/ownership/deeds/3 HTTP/1.1\" 400 270 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:44:34.621Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:46:08.736Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:46:11.584Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:46:11.587Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:46:11.588Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:46:11.588Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:46:15 +0000] \"GET /api/v1/ownership/deeds/3 HTTP/1.1\" 400 213 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:46:15.665Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:46:27.509Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:46:30.043Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:46:30.047Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:46:30.047Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:46:30.047Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:46:35 +0000] \"GET /api/v1/ownership/deeds/3 HTTP/1.1\" 400 213 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:46:35.272Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:47:15.656Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:47:18.369Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:47:18.371Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:47:18.371Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:47:18.371Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:47:25 +0000] \"GET /api/v1/ownership/deeds/3 HTTP/1.1\" 400 213 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:47:25.924Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:48:12.453Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:48:15.205Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:48:15.209Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:48:15.210Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:48:15.210Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:48:18 +0000] \"GET /api/v1/ownership/deeds/3 HTTP/1.1\" 400 213 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:48:18.864Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:49:19.451Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:49:22.063Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:49:22.067Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:49:22.067Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:49:22.068Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:49:24 +0000] \"GET /api/v1/ownership/deeds/3 HTTP/1.1\" 400 213 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:49:24.237Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:50:18.224Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:50:20.776Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:50:20.783Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:50:20.783Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:50:20.784Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T20:50:34.285Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T20:50:36.942Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T20:50:36.945Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T20:50:36.946Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T20:50:36.946Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:50:39 +0000] \"GET /api/v1/ownership/deeds/3 HTTP/1.1\" 200 525 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:50:39.423Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:20:51:29 +0000] \"POST /api/v1/ownership/deeds/3/direct-transfer HTTP/1.1\" 200 456 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T20:51:29.078Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:00:19 +0000] \"GET /api/v1/product-passport/brands/status/0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927 HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:00:19.214Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:00:25 +0000] \"GET /api/v1/product-passport/brands/rolerxd HTTP/1.1\" 200 525 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:00:25.715Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:02:11 +0000] \"POST /api/v1/product-passport/brands HTTP/1.1\" 201 683 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:02:11.652Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:14:12.348Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:14:14.945Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:14:14.948Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:14:14.949Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:14:14.949Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:14:23.835Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:14:26.323Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:14:26.327Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:14:26.327Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:14:26.328Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:14:29.265Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:14:31.649Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:14:31.652Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:14:31.652Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:14:31.652Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:14:48 +0000] \"POST /api/v1/wallet/create HTTP/1.1\" 201 415 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:14:48.807Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:26:42.601Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:26:45.269Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:26:45.272Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:26:45.272Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:26:45.272Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:27:25 +0000] \"POST /api/v1/product-passport/brands HTTP/1.1\" 400 243 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:27:25.308Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:27:28 +0000] \"POST /api/v1/product-passport/brands HTTP/1.1\" 400 242 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:27:28.281Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:28:06 +0000] \"POST /api/v1/product-passport/brands HTTP/1.1\" 201 742 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:28:06.673Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:29:16 +0000] \"GET /api/v1/product-passport/brands/rolera HTTP/1.1\" 200 522 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:29:16.573Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:29:56 +0000] \"POST /api/v1/wallet/validate-address HTTP/1.1\" 200 127 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:29:56.249Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:29:56.747Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:29:59.261Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:29:59.265Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:29:59.265Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:29:59.266Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:30:15.631Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:30:17.859Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:30:17.863Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:30:17.863Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:30:17.863Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:30:37.748Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:30:40.194Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:30:40.197Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:30:40.198Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:30:40.198Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:30:41.491Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:30:42.278Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:30:44.672Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:30:44.687Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:30:44.687Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:30:44.687Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:30:46.283Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:30:48.467Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:30:48.472Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:30:48.473Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:30:48.473Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:31:15.466Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:31:18.135Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:31:18.138Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:31:18.139Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:31:18.139Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:31:19.600Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:31:21.791Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:31:21.794Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:31:21.794Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:31:21.794Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:31:24.327Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:31:26.838Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:31:26.841Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:31:26.841Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:31:26.841Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:31:28.435Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:31:30.739Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:31:30.741Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:31:30.741Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:31:30.742Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:31:33.170Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:31:35.443Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:31:35.445Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:31:35.446Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:31:35.446Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:31:37.517Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:31:39.948Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:31:39.952Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:31:39.952Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:31:39.952Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:31:44.107Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:31:46.371Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:31:46.373Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:31:46.373Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:31:46.374Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:31:47.783Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:31:50.007Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:31:50.009Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:31:50.009Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:31:50.009Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:32:14 +0000] \"POST /api/v1/wallet/create HTTP/1.1\" 201 415 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:32:14.321Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:32:20 +0000] \"POST /api/v1/wallet/validate-address HTTP/1.1\" 200 124 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:32:20.639Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:32:27.317Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:32:29.894Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:32:29.898Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:32:29.898Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:32:29.899Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:32:36.861Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:32:37.883Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:32:39.968Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:32:39.972Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:32:39.972Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:32:39.973Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:34:27 +0000] \"POST /api/v1/wallet/create-from-mnemonic HTTP/1.1\" 201 445 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:34:27.592Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:34:33 +0000] \"POST /api/v1/wallet/validate-address HTTP/1.1\" 200 127 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:34:33.541Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:34:57 +0000] \"GET /api/v1/wallet/balance/0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6 HTTP/1.1\" 400 210 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:34:57.138Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:35:09 +0000] \"GET /api/v1/wallet/balance/0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6 HTTP/1.1\" 400 210 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:35:09.131Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:35:32 +0000] \"POST /api/v1/wallet/validate-address HTTP/1.1\" 200 127 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:35:32.396Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:35:38 +0000] \"POST /api/v1/wallet/validate-address HTTP/1.1\" 200 127 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:35:38.241Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:35:42 +0000] \"POST /api/v1/wallet/create HTTP/1.1\" 201 324 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:35:42.802Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:35:51 +0000] \"POST /api/v1/wallet/validate-address HTTP/1.1\" 200 124 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:35:51.609Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:35:58 +0000] \"GET /api/v1/wallet/testnet-balance/0x46B176615cFa828Bd2Ad8CEA0726a7D9BED03E89 HTTP/1.1\" 200 180 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:35:58.914Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:36:03 +0000] \"GET /api/v1/wallet/balance/0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6 HTTP/1.1\" 400 210 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:36:03.513Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:36:04.214Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:36:06.612Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:36:06.617Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:36:06.617Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:36:06.617Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:36:06 +0000] \"GET /api/v1/wallet/balance/0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6 HTTP/1.1\" 400 210 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:36:06.841Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:36:07 +0000] \"GET /api/v1/wallet/balance/0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6 HTTP/1.1\" 400 210 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:36:07.482Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:36:08.160Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:36:10.485Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:36:10.489Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:36:10.489Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:36:10.490Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:36:10 +0000] \"GET /api/v1/wallet/balance/0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6 HTTP/1.1\" 400 210 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:36:10.757Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:36:23 +0000] \"GET /api/v1/wallet/balance/0x46B176615cFa828Bd2Ad8CEA0726a7D9BED03E89 HTTP/1.1\" 200 167 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:36:23.708Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:36:34.524Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:36:36.942Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:36:36.945Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:36:36.946Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:36:36.946Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:37:24.501Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:37:26.952Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:37:26.956Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:37:26.956Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:37:26.956Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:37:34.999Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:37:37.546Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:37:37.550Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:37:37.550Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:37:37.551Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:37:43.324Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:37:45.625Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:37:45.629Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:37:45.630Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:37:45.630Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:38:02.045Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:38:04.518Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:38:04.522Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:38:04.522Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:38:04.522Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:38:12.304Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:38:14.701Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:38:14.705Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:38:14.706Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:38:14.706Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:38:19.925Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:38:22.480Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:38:22.483Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:38:22.484Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:38:22.484Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:38:30.126Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:38:32.617Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:38:32.620Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:38:32.621Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:38:32.621Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:38:45 +0000] \"POST /api/v1/wallet/balance/0x46B176615cFa828Bd2Ad8CEA0726a7D9BED03E89 HTTP/1.1\" 200 181 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:38:45.301Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:38:51 +0000] \"POST /api/v1/wallet/balance/0x46B176615cFa828Bd2Ad8CEA0726a7D9BED03E89 HTTP/1.1\" 200 188 \"-\" \"curl/8.7.1\"","service":"tratatech-api","timestamp":"2025-09-15T21:38:51.885Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:39:07.784Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:39:10.379Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:39:10.383Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:39:10.384Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:39:10.384Z"}
+{"level":"info","message":"::1 - - [15/Sep/2025:21:39:12 +0000] \"POST /api/v1/wallet/balance/0x46B176615cFa828Bd2Ad8CEA0726a7D9BED03E89 HTTP/1.1\" 200 188 \"-\" \"PostmanRuntime/7.46.0\"","service":"tratatech-api","timestamp":"2025-09-15T21:39:12.361Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:41:47.993Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:41:50.317Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:41:50.324Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:41:50.325Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:41:50.325Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:41:51.725Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:41:53.925Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:41:53.929Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:41:53.929Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:41:53.929Z"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"tratatech-api","timestamp":"2025-09-15T21:48:18.683Z"}
+{"level":"info","message":"Blockchain service initialized successfully","service":"tratatech-api","timestamp":"2025-09-15T21:48:21.122Z"}
+{"level":"info","message":"🚀 TrataTech API Server running on port 3005","service":"tratatech-api","timestamp":"2025-09-15T21:48:21.125Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:3005/api-docs","service":"tratatech-api","timestamp":"2025-09-15T21:48:21.125Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:3005/health","service":"tratatech-api","timestamp":"2025-09-15T21:48:21.126Z"}

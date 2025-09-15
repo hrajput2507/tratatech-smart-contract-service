@@ -148,21 +148,27 @@ router.post(
     }
 
     const brandData: CreateBrandRequest = req.body;
-    const userAddress = req.user?.walletAddress;
+    const userAddress = req.body.walletAddress;
 
     if (!userAddress) {
       throw new Error("User wallet address is required");
     }
 
+    // Generate the brandId that will be used in the contract
+    const brandId = brandData.name.toLowerCase().replace(/\s+/g, "-");
+
     try {
+      // Check if brand already exists
+      const brandAlreadyExists = await blockchainService.brandExists(brandId);
+      if (brandAlreadyExists) {
+        throw new Error(`Brand with ID '${brandId}' already exists`);
+      }
+
       // First register the brand with full data
       const receipt = await blockchainService.registerBrand(brandData);
 
       // Then authorize the brand address to make it active
       const authReceipt = await blockchainService.authorizeBrand(userAddress);
-
-      // Generate the actual brandId that was used in the contract
-      const actualBrandId = brandData.name.toLowerCase().replace(/\s+/g, "-");
 
       const response: ApiResponse<TransactionResponse> = {
         success: true,
@@ -173,7 +179,7 @@ router.post(
           brandData,
           ipfsCID: receipt.ipfsCID || "",
           brandAddress: userAddress,
-          brandId: actualBrandId, // Add the actual brandId used in the contract
+          brandId: brandId, // Use the brandId that was checked
           isActive: true,
         },
       };
@@ -416,6 +422,16 @@ router.post(
     const passportData: CreatePassportRequest = req.body;
 
     try {
+      // Check if serial number already exists
+      const serialNumberExists = await blockchainService.serialNumberExists(
+        passportData.serialNumber
+      );
+      if (serialNumberExists) {
+        throw new Error(
+          `Product passport with serial number '${passportData.serialNumber}' already exists`
+        );
+      }
+
       const receipt = await blockchainService.createProductPassport(
         passportData
       );

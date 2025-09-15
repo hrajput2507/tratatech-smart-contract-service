@@ -16,6 +16,7 @@ import ownershipRoutes from "./routes/ownership";
 import businessRoutes from "./routes/business";
 import adminRoutes from "./routes/admin";
 import authRoutes from "./routes/auth";
+import walletRoutes from "./routes/wallet";
 
 // Import middleware
 import { errorHandler } from "./middleware/errorHandler";
@@ -164,6 +165,7 @@ app.use("/api/v1/provenance", authMiddleware, provenanceRoutes);
 app.use("/api/v1/ownership", authMiddleware, ownershipRoutes);
 app.use("/api/v1/business", authMiddleware, businessRoutes);
 app.use("/api/v1/admin", authMiddleware, adminRoutes);
+app.use("/api/v1/wallet", authMiddleware, walletRoutes);
 
 // Root endpoint
 app.get("/", (_req: Request, res: Response) => {
@@ -189,6 +191,7 @@ app.use("*", (req: Request, res: Response) => {
       ownership: "/api/ownership",
       business: "/api/business",
       admin: "/api/admin",
+      wallet: "/api/wallet",
     },
   });
 });

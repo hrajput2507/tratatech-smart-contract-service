@@ -32,6 +32,7 @@ export interface BrandRegistration {
   website: string;
   authorizedCountries: string[];
   ipfsData: IPFSObject;
+  walletAddress?: string;
 }
 
 export interface Brand {
@@ -56,6 +57,9 @@ export interface ProductPassport {
   serialNumber: string;
   manufacturingDate: number;
   expiryDate: number;
+  materials?: string; // Optional materials field
+  manufacturingLocation?: string; // Optional manufacturing location field
+  additionalAttributes?: string[]; // Optional additional attributes
   ipfsData: IPFSObject;
 }
 
@@ -580,4 +584,24 @@ export type IPFSData = string | IPFSMetadata;
 export interface IPFSObject {
   cid?: string; // Optional CID if already uploaded
   metadata: IPFSMetadata; // The metadata object to upload
+}
+
+// Wallet-related types
+export interface WalletData {
+  address: string;
+  privateKey: string;
+  publicKey: string;
+  mnemonic?: string;
+  createdAt: string;
+}
+
+export interface CreateWalletRequest {
+  includeMnemonic?: boolean; // Whether to include mnemonic phrase
+  userId?: string; // Optional user ID for tracking
+}
+
+export interface CreateWalletResponse {
+  success: boolean;
+  message: string;
+  data: WalletData;
 }

@@ -1,0 +1,31 @@
+{
+  "network": "polygonAmoy",
+  "chainId": 80002,
+  "deployer": "0xE3240ff264BEf46e9E87E056f4c8098A4Aec5927",
+  "deployedAt": "2025-09-15T09:38:50.004Z",
+  "contracts": {
+    "minimalForwarder": {
+      "address": "0x4385e281bf2E6F3dDd537CD05503dAD6D42Fd481"
+    },
+    "productPassport": {
+      "address": "0xBBc5DE51a45a6ec6cD8cac506c6D3d00C7969dCD",
+      "implementation": "0x6D9d08d5Ca4a100a23fCf6431C165Ff94Eae18b2",
+      "admin": "0x0000000000000000000000000000000000000000"
+    },
+    "provenance": {
+      "address": "0xEE0EaE1cA95bF796Dba993dCdFe440bb5dDd6A27",
+      "implementation": "0x948a0Adb91852Cf0f487903a2AB170D1f102F386",
+      "admin": "0x0000000000000000000000000000000000000000"
+    },
+    "ownershipRegistry": {
+      "address": "0xF8D015819AC0B19e459B4897D322459fa9abC47c",
+      "implementation": "0xEF6dB4BA9A5aC4cCBcc8F2342a00D48E227f2545",
+      "admin": "0x0000000000000000000000000000000000000000"
+    },
+    "main": {
+      "address": "0x36929d14fd218F3DA6067736d7fD720636d3D892",
+      "implementation": "0x0A00bA1BA80c04CA955430495b79D1F686644237",
+      "admin": "0x0000000000000000000000000000000000000000"
+    }
+  }
+}
