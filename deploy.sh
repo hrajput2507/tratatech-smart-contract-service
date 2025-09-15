@@ -21,12 +21,11 @@ if [ "$NETWORK" = "amoy" ]; then
         npx hardhat run scripts/deploy-amoy.js --network polygonAmoy
         
         # Find the latest deployment file
-        DEPLOYMENT_FILE=$(ls -t deployment-upgradeable-polygonAmoy-*.json 2>/dev/null | head -n1)
+        DEPLOYMENT_FILE=$(ls -t deployments/deployment-upgradeable-polygonAmoy-*.json 2>/dev/null | head -n1)
         
         if [ -n "$DEPLOYMENT_FILE" ]; then
-            echo "🔧 Updating environment variables..."
-            node scripts/setup-env-from-deployment.js "$DEPLOYMENT_FILE"
             echo "✅ Deployment completed! Check $DEPLOYMENT_FILE for details."
+            echo "🔧 Environment variables have been automatically updated in .env file."
         else
             echo "❌ No deployment file found. Check the deployment logs."
         fi
@@ -47,12 +46,11 @@ elif [ "$NETWORK" = "mainnet" ]; then
         npx hardhat run scripts/deploy-mainnet.js --network polygon
         
         # Find the latest deployment file
-        DEPLOYMENT_FILE=$(ls -t deployment-upgradeable-polygonMainnet-*.json 2>/dev/null | head -n1)
+        DEPLOYMENT_FILE=$(ls -t deployments/deployment-upgradeable-polygonMainnet-*.json 2>/dev/null | head -n1)
         
         if [ -n "$DEPLOYMENT_FILE" ]; then
-            echo "🔧 Updating environment variables..."
-            node scripts/setup-env-from-deployment.js "$DEPLOYMENT_FILE"
             echo "✅ Mainnet deployment completed! Check $DEPLOYMENT_FILE for details."
+            echo "🔧 Environment variables have been automatically updated in .env file."
             echo "🔍 Consider verifying contracts on Polygonscan."
         else
             echo "❌ No deployment file found. Check the deployment logs."
